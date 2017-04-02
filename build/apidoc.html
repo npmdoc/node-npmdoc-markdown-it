@@ -1,0 +1,2529 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/markdown-it/markdown-it#readme"
+
+    >markdown-it (v8.3.1)</a>
+</h1>
+<h4>Markdown-it - modern pluggable markdown parser.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it">module markdown-it</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_block">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_block
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_core">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_core
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_inline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer">
+            function <span class="apidocSignatureSpan">markdown-it.</span>renderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler">
+            function <span class="apidocSignatureSpan">markdown-it.</span>ruler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token">
+            function <span class="apidocSignatureSpan">markdown-it.</span>token
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>parser_block.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>parser_core.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>parser_inline.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>renderer.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>ruler.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>token.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_block">module markdown-it.parser_block</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_block.parser_block">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_block
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_block.prototype">module markdown-it.parser_block.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_block.prototype.State">
+            function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>State
+            <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_block.prototype.parse">
+            function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>parse
+            <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_block.prototype.tokenize">
+            function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>tokenize
+            <span class="apidocSignatureSpan">(state, startLine, endLine)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_core">module markdown-it.parser_core</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_core.parser_core">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_core
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_core.prototype">module markdown-it.parser_core.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_core.prototype.State">
+            function <span class="apidocSignatureSpan">markdown-it.parser_core.prototype.</span>State
+            <span class="apidocSignatureSpan">(src, md, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_core.prototype.process">
+            function <span class="apidocSignatureSpan">markdown-it.parser_core.prototype.</span>process
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_inline">module markdown-it.parser_inline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline.parser_inline">
+            function <span class="apidocSignatureSpan">markdown-it.</span>parser_inline
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.parser_inline.prototype">module markdown-it.parser_inline.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline.prototype.State">
+            function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>State
+            <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline.prototype.parse">
+            function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>parse
+            <span class="apidocSignatureSpan">(str, md, env, outTokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline.prototype.skipToken">
+            function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>skipToken
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.parser_inline.prototype.tokenize">
+            function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>tokenize
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.renderer">module markdown-it.renderer</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.renderer">
+            function <span class="apidocSignatureSpan">markdown-it.</span>renderer
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.renderer.prototype">module markdown-it.renderer.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.prototype.render">
+            function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>render
+            <span class="apidocSignatureSpan">(tokens, options, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.prototype.renderAttrs">
+            function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderAttrs
+            <span class="apidocSignatureSpan">(token)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.prototype.renderInline">
+            function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderInline
+            <span class="apidocSignatureSpan">(tokens, options, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.prototype.renderInlineAsText">
+            function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderInlineAsText
+            <span class="apidocSignatureSpan">(tokens, options, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.renderer.prototype.renderToken">
+            function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderToken
+            <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.ruler">module markdown-it.ruler</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.ruler">
+            function <span class="apidocSignatureSpan">markdown-it.</span>ruler
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.ruler.prototype">module markdown-it.ruler.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.__compile__">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>__compile__
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.__find__">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>__find__
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.after">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>after
+            <span class="apidocSignatureSpan">(afterName, ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.at">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>at
+            <span class="apidocSignatureSpan">(name, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.before">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>before
+            <span class="apidocSignatureSpan">(beforeName, ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.disable">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>disable
+            <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.enable">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>enable
+            <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.enableOnly">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>enableOnly
+            <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.getRules">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>getRules
+            <span class="apidocSignatureSpan">(chainName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.ruler.prototype.push">
+            function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>push
+            <span class="apidocSignatureSpan">(ruleName, fn, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.token">module markdown-it.token</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.token">
+            function <span class="apidocSignatureSpan">markdown-it.</span>token
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.token.prototype">module markdown-it.token.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.prototype.attrGet">
+            function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrGet
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.prototype.attrIndex">
+            function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrIndex
+            <span class="apidocSignatureSpan">(name)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.prototype.attrJoin">
+            function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrJoin
+            <span class="apidocSignatureSpan">(name, value)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.prototype.attrPush">
+            function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrPush
+            <span class="apidocSignatureSpan">(attrData)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.token.prototype.attrSet">
+            function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrSet
+            <span class="apidocSignatureSpan">(name, value)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it" id="apidoc.module.markdown-it">module markdown-it</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_block" id="apidoc.element.markdown-it.parser_block">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_block
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserBlock() {
+<span class="apidocCodeCommentSpan">  /**
+   * ParserBlock#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of block rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1], { alt: (_rules[i][2] || []).slice() });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_core" id="apidoc.element.markdown-it.parser_core">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_core
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Core() {
+<span class="apidocCodeCommentSpan">  /**
+   * Core#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of core rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline" id="apidoc.element.markdown-it.parser_inline">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_inline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserInline() {
+  var i;
+
+<span class="apidocCodeCommentSpan">  /**
+   * ParserInline#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of inline rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+
+  /**
+   * ParserInline#ruler2 -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Second ruler used for post-processing
+   * (e.g. in emphasis-like rules).
+   **/
+  this.ruler2 = new Ruler();
+
+  for (i = 0; i &#x3c; _rules2.length; i++) {
+    this.ruler2.push(_rules2[i][0], _rules2[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer" id="apidoc.element.markdown-it.renderer">
+        function <span class="apidocSignatureSpan">markdown-it.</span>renderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Renderer() {
+
+<span class="apidocCodeCommentSpan">  /**
+   * Renderer#rules -&#x3e; Object
+   *
+   * Contains render rules for tokens. Can be updated and extended.
+   *
+   * ##### Example
+   *
+   * ```javascript
+   * var md = require(&#x27;markdown-it&#x27;)();
+   *
+   * md.renderer.rules.strong_open  = function () { return &#x27;&#x3c;b&#x3e;&#x27;; };
+   * md.renderer.rules.strong_close = function () { return &#x27;&#x3c;/b&#x3e;&#x27;; };
+   *
+   * var result = md.renderInline(...);
+   * ```
+   *
+   * Each rule is called as independed static function with fixed signature:
+   *
+   * ```javascript
+   * function my_token_render(tokens, idx, options, env, renderer) {
+   *   // ...
+   *   return renderedHTML;
+   * }
+   * ```
+   *
+   * See [source code](https://github.com/markdown-it/markdown-it/blob/master/lib/renderer.js)
+   * for more details and examples.
+   **/
+</span>  this.rules = assign({}, default_rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler" id="apidoc.element.markdown-it.ruler">
+        function <span class="apidocSignatureSpan">markdown-it.</span>ruler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ruler() {
+  // List of added rules. Each element is:
+  //
+  // {
+  //   name: XXX,
+  //   enabled: Boolean,
+  //   fn: Function(),
+  //   alt: [ name2, name3 ]
+  // }
+  //
+  this.__rules__ = [];
+
+  // Cached rule chains.
+  //
+  // First level - chain name, &#x27;&#x27; for default.
+  // Second level - diginal anchor for fast filtering by charcodes.
+  //
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token" id="apidoc.element.markdown-it.token">
+        function <span class="apidocSignatureSpan">markdown-it.</span>token
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Token(type, tag, nesting) {
+<span class="apidocCodeCommentSpan">  /**
+   * Token#type -&#x3e; String
+   *
+   * Type of the token (string, e.g. &#x22;paragraph_open&#x22;)
+   **/
+</span>  this.type     = type;
+
+  /**
+   * Token#tag -&#x3e; String
+   *
+   * html tag name, e.g. &#x22;p&#x22;
+   **/
+  this.tag      = tag;
+
+  /**
+   * Token#attrs -&#x3e; Array
+   *
+   * Html attributes. Format: `[ [ name1, value1 ], [ name2, value2 ] ]`
+   **/
+  this.attrs    = null;
+
+  /**
+   * Token#map -&#x3e; Array
+   *
+   * Source map info. Format: `[ line_begin, line_end ]`
+   **/
+  this.map      = null;
+
+  /**
+   * Token#nesting -&#x3e; Number
+   *
+   * Level change (number in {-1, 0, 1} set), where:
+   *
+   * -  `1` means the tag is opening
+   * -  `0` means the tag is self-closing
+   * - `-1` means the tag is closing
+   **/
+  this.nesting  = nesting;
+
+  /**
+   * Token#level -&#x3e; Number
+   *
+   * nesting level, the same as `state.level`
+   **/
+  this.level    = 0;
+
+  /**
+   * Token#children -&#x3e; Array
+   *
+   * An array of child nodes (inline and img tokens)
+   **/
+  this.children = null;
+
+  /**
+   * Token#content -&#x3e; String
+   *
+   * In a case of self-closing tag (code, html, fence, etc.),
+   * it has contents of this tag.
+   **/
+  this.content  = &#x27;&#x27;;
+
+  /**
+   * Token#markup -&#x3e; String
+   *
+   * &#x27;*&#x27; or &#x27;_&#x27; for emphasis, fence string for fence, etc.
+   **/
+  this.markup   = &#x27;&#x27;;
+
+  /**
+   * Token#info -&#x3e; String
+   *
+   * fence infostring
+   **/
+  this.info     = &#x27;&#x27;;
+
+  /**
+   * Token#meta -&#x3e; Object
+   *
+   * A place for plugins to store an arbitrary data
+   **/
+  this.meta     = null;
+
+  /**
+   * Token#block -&#x3e; Boolean
+   *
+   * True for block-level tokens, false for inline tokens.
+   * Used in renderer to calculate line breaks
+   **/
+  this.block    = false;
+
+  /**
+   * Token#hidden -&#x3e; Boolean
+   *
+   * If it&#x27;s true, ignore this element when rendering. Used for tight lists
+   * to hide paragraphs.
+   **/
+  this.hidden   = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_block" id="apidoc.module.markdown-it.parser_block">module markdown-it.parser_block</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_block.parser_block" id="apidoc.element.markdown-it.parser_block.parser_block">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_block
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserBlock() {
+<span class="apidocCodeCommentSpan">  /**
+   * ParserBlock#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of block rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1], { alt: (_rules[i][2] || []).slice() });
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_block.prototype" id="apidoc.module.markdown-it.parser_block.prototype">module markdown-it.parser_block.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_block.prototype.State" id="apidoc.element.markdown-it.parser_block.prototype.State">
+        function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>State
+        <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateBlock(src, md, env, tokens) {
+  var ch, s, start, pos, len, indent, offset, indent_found;
+
+  this.src = src;
+
+  // link to parser instance
+  this.md     = md;
+
+  this.env = env;
+
+  //
+  // Internal state vartiables
+  //
+
+  this.tokens = tokens;
+
+  this.bMarks = [];  // line begin offsets for fast jumps
+  this.eMarks = [];  // line end offsets for fast jumps
+  this.tShift = [];  // offsets of the first non-space characters (tabs not expanded)
+  this.sCount = [];  // indents for each line (tabs expanded)
+
+  // An amount of virtual spaces (tabs expanded) between beginning
+  // of each line (bMarks) and real beginning of that line.
+  //
+  // It exists only as a hack because blockquotes override bMarks
+  // losing information in the process.
+  //
+  // It&#x27;s used only when expanding tabs, you can think about it as
+  // an initial tab length, e.g. bsCount=21 applied to string `\t123`
+  // means first tab should be expanded to 4-21%4 === 3 spaces.
+  //
+  this.bsCount = [];
+
+  // block parser variables
+  this.blkIndent  = 0; // required block content indent
+                       // (for example, if we are in list)
+  this.line       = 0; // line index in src
+  this.lineMax    = 0; // lines count
+  this.tight      = false;  // loose/tight mode for lists
+  this.ddIndent   = -1; // indent of the current dd block (-1 if there isn&#x27;t any)
+
+  // can be &#x27;blockquote&#x27;, &#x27;list&#x27;, &#x27;root&#x27;, &#x27;paragraph&#x27; or &#x27;reference&#x27;
+  // used in lists to determine if they interrupt a paragraph
+  this.parentType = &#x27;root&#x27;;
+
+  this.level = 0;
+
+  // renderer
+  this.result = &#x27;&#x27;;
+
+  // Create caches
+  // Generate markers.
+  s = this.src;
+  indent_found = false;
+
+  for (start = pos = indent = offset = 0, len = s.length; pos &#x3c; len; pos++) {
+    ch = s.charCodeAt(pos);
+
+    if (!indent_found) {
+      if (isSpace(ch)) {
+        indent++;
+
+        if (ch === 0x09) {
+          offset += 4 - offset % 4;
+        } else {
+          offset++;
+        }
+        continue;
+      } else {
+        indent_found = true;
+      }
+    }
+
+    if (ch === 0x0A || pos === len - 1) {
+      if (ch !== 0x0A) { pos++; }
+      this.bMarks.push(start);
+      this.eMarks.push(pos);
+      this.tShift.push(indent);
+      this.sCount.push(offset);
+      this.bsCount.push(0);
+
+      indent_found = false;
+      indent = 0;
+      offset = 0;
+      start = pos + 1;
+    }
+  }
+
+  // Push fake entry to simplify cache bounds checks
+  this.bMarks.push(s.length);
+  this.eMarks.push(s.length);
+  this.tShift.push(0);
+  this.sCount.push(0);
+  this.bsCount.push(0);
+
+  this.lineMax = this.bMarks.length - 1; // don&#x27;t count last fake line
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Process input string and push block tokens into `outTokens`
+ **/
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+
+  this.tokenize(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require(&#x27;./rules_block/state_block&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_block.prototype.parse" id="apidoc.element.markdown-it.parser_block.prototype.parse">
+        function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>parse
+        <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.State(src, md, env, outTokens);
+
+  this.tokenize(state, state.line, state.lineMax);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    state.line = line;
+  }
+}
+};
+
+
+/**
+ * ParserBlock.<span class="apidocCodeKeywordSpan">parse</span>(str, md, env, outTokens)
+ *
+ * Process input string and push block tokens into `outTokens`
+ **/
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+var state;
+
+if (!src) { return; }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_block.prototype.tokenize" id="apidoc.element.markdown-it.parser_block.prototype.tokenize">
+        function <span class="apidocSignatureSpan">markdown-it.parser_block.prototype.</span>tokenize
+        <span class="apidocSignatureSpan">(state, startLine, endLine)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tokenize = function (state, startLine, endLine) {
+  var ok, i,
+      rules = this.ruler.getRules(&#x27;&#x27;),
+      len = rules.length,
+      line = startLine,
+      hasEmptyLines = false,
+      maxNesting = state.md.options.maxNesting;
+
+  while (line &#x3c; endLine) {
+    state.line = line = state.skipEmptyLines(line);
+    if (line &#x3e;= endLine) { break; }
+
+    // Termination condition for nested calls.
+    // Nested calls currently used for blockquotes &#x26; lists
+    if (state.sCount[line] &#x3c; state.blkIndent) { break; }
+
+    // If nesting level exceeded - skip tail to the end. That&#x27;s not ordinary
+    // situation and we should not care about content.
+    if (state.level &#x3e;= maxNesting) {
+      state.line = endLine;
+      break;
+    }
+
+    // Try all possible rules.
+    // On success, rule should:
+    //
+    // - update `state.line`
+    // - update `state.tokens`
+    // - return true
+
+    for (i = 0; i &#x3c; len; i++) {
+      ok = rules[i](state, line, endLine, false);
+      if (ok) { break; }
+    }
+
+    // set state.tight iff we had an empty line before current tag
+    // i.e. latest empty line should not count
+    state.tight = !hasEmptyLines;
+
+    // paragraph might &#x22;eat&#x22; one newline after it in nested lists
+    if (state.isEmpty(state.line - 1)) {
+      hasEmptyLines = true;
+    }
+
+    line = state.line;
+
+    if (line &#x3c; endLine &#x26;&#x26; state.isEmpty(line)) {
+      hasEmptyLines = true;
+      line++;
+      state.line = line;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.State(src, md, env, outTokens);
+
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require(&#x27;./rules_block/state_block&#x27;);
+
+
+module.exports = ParserBlock;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_core" id="apidoc.module.markdown-it.parser_core">module markdown-it.parser_core</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_core.parser_core" id="apidoc.element.markdown-it.parser_core.parser_core">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_core
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Core() {
+<span class="apidocCodeCommentSpan">  /**
+   * Core#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of core rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_core.prototype" id="apidoc.module.markdown-it.parser_core.prototype">module markdown-it.parser_core.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_core.prototype.State" id="apidoc.element.markdown-it.parser_core.prototype.State">
+        function <span class="apidocSignatureSpan">markdown-it.parser_core.prototype.</span>State
+        <span class="apidocSignatureSpan">(src, md, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateCore(src, md, env) {
+  this.src = src;
+  this.env = env;
+  this.tokens = [];
+  this.inlineMode = false;
+  this.md = md; // link to parser instance
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Process input string and push block tokens into `outTokens`
+ **/
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+
+  this.tokenize(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require(&#x27;./rules_block/state_block&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_core.prototype.process" id="apidoc.element.markdown-it.parser_core.prototype.process">
+        function <span class="apidocSignatureSpan">markdown-it.parser_core.prototype.</span>process
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">process = function (state) {
+  var i, l, rules;
+
+  rules = this.ruler.getRules(&#x27;&#x27;);
+
+  for (i = 0, l = rules.length; i &#x3c; l; i++) {
+    rules[i](state);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+for (var i = 0; i &#x3c; _rules.length; i++) {
+  this.ruler.push(_rules[i][0], _rules[i][1]);
+}
+}
+
+
+/**
+ * Core.<span class="apidocCodeKeywordSpan">process</span>(state)
+ *
+ * Executes core chain rules.
+ **/
+Core.prototype.process = function (state) {
+var i, l, rules;
+
+rules = this.ruler.getRules(&#x27;&#x27;);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_inline" id="apidoc.module.markdown-it.parser_inline">module markdown-it.parser_inline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline.parser_inline" id="apidoc.element.markdown-it.parser_inline.parser_inline">
+        function <span class="apidocSignatureSpan">markdown-it.</span>parser_inline
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserInline() {
+  var i;
+
+<span class="apidocCodeCommentSpan">  /**
+   * ParserInline#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of inline rules.
+   **/
+</span>  this.ruler = new Ruler();
+
+  for (i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.push(_rules[i][0], _rules[i][1]);
+  }
+
+  /**
+   * ParserInline#ruler2 -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Second ruler used for post-processing
+   * (e.g. in emphasis-like rules).
+   **/
+  this.ruler2 = new Ruler();
+
+  for (i = 0; i &#x3c; _rules2.length; i++) {
+    this.ruler2.push(_rules2[i][0], _rules2[i][1]);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.parser_inline.prototype" id="apidoc.module.markdown-it.parser_inline.prototype">module markdown-it.parser_inline.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline.prototype.State" id="apidoc.element.markdown-it.parser_inline.prototype.State">
+        function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>State
+        <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateInline(src, md, env, outTokens) {
+  this.src = src;
+  this.env = env;
+  this.md = md;
+  this.tokens = outTokens;
+
+  this.pos = 0;
+  this.posMax = this.src.length;
+  this.level = 0;
+  this.pending = &#x27;&#x27;;
+  this.pendingLevel = 0;
+
+  this.cache = {};        // Stores { start: end } pairs. Useful for backtrack
+                          // optimization of pairs parse (emphasis, strikes).
+
+  this.delimiters = [];   // Emphasis-like delimiters
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * Process input string and push block tokens into `outTokens`
+ **/
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+
+  this.tokenize(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require(&#x27;./rules_block/state_block&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline.prototype.parse" id="apidoc.element.markdown-it.parser_inline.prototype.parse">
+        function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>parse
+        <span class="apidocSignatureSpan">(str, md, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function (str, md, env, outTokens) {
+  var i, rules, len;
+  var state = new this.State(str, md, env, outTokens);
+
+  this.tokenize(state);
+
+  rules = this.ruler2.getRules(&#x27;&#x27;);
+  len = rules.length;
+
+  for (i = 0; i &#x3c; len; i++) {
+    rules[i](state);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    state.line = line;
+  }
+}
+};
+
+
+/**
+ * ParserBlock.<span class="apidocCodeKeywordSpan">parse</span>(str, md, env, outTokens)
+ *
+ * Process input string and push block tokens into `outTokens`
+ **/
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+var state;
+
+if (!src) { return; }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline.prototype.skipToken" id="apidoc.element.markdown-it.parser_inline.prototype.skipToken">
+        function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>skipToken
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">skipToken = function (state) {
+  var ok, i, pos = state.pos,
+      rules = this.ruler.getRules(&#x27;&#x27;),
+      len = rules.length,
+      maxNesting = state.md.options.maxNesting,
+      cache = state.cache;
+
+
+  if (typeof cache[pos] !== &#x27;undefined&#x27;) {
+    state.pos = cache[pos];
+    return;
+  }
+
+  if (state.level &#x3c; maxNesting) {
+    for (i = 0; i &#x3c; len; i++) {
+      // Increment state.level and decrement it later to limit recursion.
+      // It&#x27;s harmless to do here, because no tokens are created. But ideally,
+      // we&#x27;d need a separate private state variable for this purpose.
+      //
+      state.level++;
+      ok = rules[i](state, true);
+      state.level--;
+
+      if (ok) { break; }
+    }
+  } else {
+    // Too much nesting, just skip until the end of the paragraph.
+    //
+    // NOTE: this will cause links to behave incorrectly in the following case,
+    //       when an amount of `[` is exactly equal to `maxNesting + 1`:
+    //
+    //       [[[[[[[[[[[[[[[[[[[[[foo]()
+    //
+    // TODO: remove this workaround when CM standard will allow nested links
+    //       (we can replace it by preventing links from being parsed in
+    //       validation mode)
+    //
+    state.pos = state.posMax;
+  }
+
+  if (!ok) { state.pos++; }
+  cache[pos] = state.pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.parser_inline.prototype.tokenize" id="apidoc.element.markdown-it.parser_inline.prototype.tokenize">
+        function <span class="apidocSignatureSpan">markdown-it.parser_inline.prototype.</span>tokenize
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">tokenize = function (state) {
+  var ok, i,
+      rules = this.ruler.getRules(&#x27;&#x27;),
+      len = rules.length,
+      end = state.posMax,
+      maxNesting = state.md.options.maxNesting;
+
+  while (state.pos &#x3c; end) {
+    // Try all possible rules.
+    // On success, rule should:
+    //
+    // - update `state.pos`
+    // - update `state.tokens`
+    // - return true
+
+    if (state.level &#x3c; maxNesting) {
+      for (i = 0; i &#x3c; len; i++) {
+        ok = rules[i](state, false);
+        if (ok) { break; }
+      }
+    }
+
+    if (ok) {
+      if (state.pos &#x3e;= end) { break; }
+      continue;
+    }
+
+    state.pending += state.src[state.pos++];
+  }
+
+  if (state.pending) {
+    state.pushPending();
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.State(src, md, env, outTokens);
+
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require(&#x27;./rules_block/state_block&#x27;);
+
+
+module.exports = ParserBlock;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.renderer" id="apidoc.module.markdown-it.renderer">module markdown-it.renderer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.renderer" id="apidoc.element.markdown-it.renderer.renderer">
+        function <span class="apidocSignatureSpan">markdown-it.</span>renderer
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Renderer() {
+
+<span class="apidocCodeCommentSpan">  /**
+   * Renderer#rules -&#x3e; Object
+   *
+   * Contains render rules for tokens. Can be updated and extended.
+   *
+   * ##### Example
+   *
+   * ```javascript
+   * var md = require(&#x27;markdown-it&#x27;)();
+   *
+   * md.renderer.rules.strong_open  = function () { return &#x27;&#x3c;b&#x3e;&#x27;; };
+   * md.renderer.rules.strong_close = function () { return &#x27;&#x3c;/b&#x3e;&#x27;; };
+   *
+   * var result = md.renderInline(...);
+   * ```
+   *
+   * Each rule is called as independed static function with fixed signature:
+   *
+   * ```javascript
+   * function my_token_render(tokens, idx, options, env, renderer) {
+   *   // ...
+   *   return renderedHTML;
+   * }
+   * ```
+   *
+   * See [source code](https://github.com/markdown-it/markdown-it/blob/master/lib/renderer.js)
+   * for more details and examples.
+   **/
+</span>  this.rules = assign({}, default_rules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.renderer.prototype" id="apidoc.module.markdown-it.renderer.prototype">module markdown-it.renderer.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.prototype.render" id="apidoc.element.markdown-it.renderer.prototype.render">
+        function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>render
+        <span class="apidocSignatureSpan">(tokens, options, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function (tokens, options, env) {
+  var i, len, type,
+      result = &#x27;&#x27;,
+      rules = this.rules;
+
+  for (i = 0, len = tokens.length; i &#x3c; len; i++) {
+    type = tokens[i].type;
+
+    if (type === &#x27;inline&#x27;) {
+      result += this.renderInline(tokens[i].children, options, env);
+    } else if (typeof rules[type] !== &#x27;undefined&#x27;) {
+      result += rules[tokens[i].type](tokens, i, options, env, this);
+    } else {
+      result += this.renderToken(tokens, i, options, env);
+    }
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### Simple
+
+```js
+// node.js, &#x22;classic&#x22; way:
+var MarkdownIt = require(&#x27;markdown-it&#x27;),
+    md = new MarkdownIt();
+var result = md.<span class="apidocCodeKeywordSpan">render</span>(&#x27;# markdown-it rulezz!&#x27;);
+
+// node.js, the same, but with sugar:
+var md = require(&#x27;markdown-it&#x27;)();
+var result = md.render(&#x27;# markdown-it rulezz!&#x27;);
+
+// browser without AMD, added to &#x22;window&#x22; on script load
+// Note, there is no dash in &#x22;markdownit&#x22;.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.prototype.renderAttrs" id="apidoc.element.markdown-it.renderer.prototype.renderAttrs">
+        function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderAttrs
+        <span class="apidocSignatureSpan">(token)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderAttrs(token) {
+  var i, l, result;
+
+  if (!token.attrs) { return &#x27;&#x27;; }
+
+  result = &#x27;&#x27;;
+
+  for (i = 0, l = token.attrs.length; i &#x3c; l; i++) {
+    result += &#x27; &#x27; + escapeHtml(token.attrs[i][0]) + &#x27;=&#x22;&#x27; + escapeHtml(token.attrs[i][1]) + &#x27;&#x22;&#x27;;
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var default_rules = {};
+
+
+default_rules.code_inline = function (tokens, idx, options, env, slf) {
+var token = tokens[idx];
+
+return  &#x27;&#x3c;code&#x27; + slf.<span class="apidocCodeKeywordSpan">renderAttrs</span>(token) + &#x27;&#x3e;&#x27; +
+        escapeHtml(tokens[idx].content) +
+        &#x27;&#x3c;/code&#x3e;&#x27;;
+};
+
+
+default_rules.code_block = function (tokens, idx, options, env, slf) {
+var token = tokens[idx];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.prototype.renderInline" id="apidoc.element.markdown-it.renderer.prototype.renderInline">
+        function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderInline
+        <span class="apidocSignatureSpan">(tokens, options, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderInline = function (tokens, options, env) {
+  var type,
+      result = &#x27;&#x27;,
+      rules = this.rules;
+
+  for (var i = 0, len = tokens.length; i &#x3c; len; i++) {
+    type = tokens[i].type;
+
+    if (typeof rules[type] !== &#x27;undefined&#x27;) {
+      result += rules[type](tokens, i, options, env, this);
+    } else {
+      result += this.renderToken(tokens, i, options);
+    }
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var result = md.render(&#x27;# markdown-it rulezz!&#x27;);
+```
+
+Single line rendering, without paragraph wrap:
+
+```js
+var md = require(&#x27;markdown-it&#x27;)();
+var result = md.<span class="apidocCodeKeywordSpan">renderInline</span>(&#x27;__markdown-it__ rulezz!&#x27;);
+```
+
+
+### Init with presets and options
+
+(*) presets define combinations of active rules and options. Can be
+`&#x22;commonmark&#x22;`, `&#x22;zero&#x22;` or `&#x22;default&#x22;` (if skipped). See
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.prototype.renderInlineAsText" id="apidoc.element.markdown-it.renderer.prototype.renderInlineAsText">
+        function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderInlineAsText
+        <span class="apidocSignatureSpan">(tokens, options, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">renderInlineAsText = function (tokens, options, env) {
+  var result = &#x27;&#x27;;
+
+  for (var i = 0, len = tokens.length; i &#x3c; len; i++) {
+    if (tokens[i].type === &#x27;text&#x27;) {
+      result += tokens[i].content;
+    } else if (tokens[i].type === &#x27;image&#x27;) {
+      result += this.renderInlineAsText(tokens[i].children, options, env);
+    }
+  }
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+// &#x22;alt&#x22; attr MUST be set, even if empty. Because it&#x27;s mandatory and
+// should be placed on proper position for tests.
+//
+// Replace content with actual value
+
+token.attrs[token.attrIndex(&#x27;alt&#x27;)][1] =
+  slf.<span class="apidocCodeKeywordSpan">renderInlineAsText</span>(token.children, options, env);
+
+return slf.renderToken(tokens, idx, options);
+};
+
+
+default_rules.hardbreak = function (tokens, idx, options /*, env */) {
+return options.xhtmlOut ? &#x27;&#x3c;br /&#x3e;\n&#x27; : &#x27;&#x3c;br&#x3e;\n&#x27;;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.renderer.prototype.renderToken" id="apidoc.element.markdown-it.renderer.prototype.renderToken">
+        function <span class="apidocSignatureSpan">markdown-it.renderer.prototype.</span>renderToken
+        <span class="apidocSignatureSpan">(tokens, idx, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function renderToken(tokens, idx, options) {
+  var nextToken,
+      result = &#x27;&#x27;,
+      needLf = false,
+      token = tokens[idx];
+
+  // Tight list paragraphs
+  if (token.hidden) {
+    return &#x27;&#x27;;
+  }
+
+  // Insert a newline between hidden paragraph and subsequent opening
+  // block-level tag.
+  //
+  // For example, here we should insert a newline before blockquote:
+  //  - a
+  //    &#x3e;
+  //
+  if (token.block &#x26;&#x26; token.nesting !== -1 &#x26;&#x26; idx &#x26;&#x26; tokens[idx - 1].hidden) {
+    result += &#x27;\n&#x27;;
+  }
+
+  // Add token name, e.g. `&#x3c;img`
+  result += (token.nesting === -1 ? &#x27;&#x3c;/&#x27; : &#x27;&#x3c;&#x27;) + token.tag;
+
+  // Encode attributes, e.g. `&#x3c;img src=&#x22;foo&#x22;`
+  result += this.renderAttrs(token);
+
+  // Add a slash for self-closing tags, e.g. `&#x3c;img src=&#x22;foo&#x22; /`
+  if (token.nesting === 0 &#x26;&#x26; options.xhtmlOut) {
+    result += &#x27; /&#x27;;
+  }
+
+  // Check if we need to add a newline after this tag
+  if (token.block) {
+    needLf = true;
+
+    if (token.nesting === 1) {
+      if (idx + 1 &#x3c; tokens.length) {
+        nextToken = tokens[idx + 1];
+
+        if (nextToken.type === &#x27;inline&#x27; || nextToken.hidden) {
+          // Block-level tag containing an inline tag.
+          //
+          needLf = false;
+
+        } else if (nextToken.nesting === -1 &#x26;&#x26; nextToken.tag === token.tag) {
+          // Opening tag + closing tag of the same type. E.g. `&#x3c;li&#x3e;&#x3c;/li&#x3e;`.
+          //
+          needLf = false;
+        }
+      }
+    }
+  }
+
+  result += needLf ? &#x27;&#x3e;\n&#x27; : &#x27;&#x3e;&#x27;;
+
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // should be placed on proper position for tests.
+  //
+  // Replace content with actual value
+
+  token.attrs[token.attrIndex(&#x27;alt&#x27;)][1] =
+    slf.renderInlineAsText(token.children, options, env);
+
+  return slf.<span class="apidocCodeKeywordSpan">renderToken</span>(tokens, idx, options);
+};
+
+
+default_rules.hardbreak = function (tokens, idx, options /*, env */) {
+  return options.xhtmlOut ? &#x27;&#x3c;br /&#x3e;\n&#x27; : &#x27;&#x3c;br&#x3e;\n&#x27;;
+};
+default_rules.softbreak = function (tokens, idx, options /*, env */) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.ruler" id="apidoc.module.markdown-it.ruler">module markdown-it.ruler</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.ruler" id="apidoc.element.markdown-it.ruler.ruler">
+        function <span class="apidocSignatureSpan">markdown-it.</span>ruler
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Ruler() {
+  // List of added rules. Each element is:
+  //
+  // {
+  //   name: XXX,
+  //   enabled: Boolean,
+  //   fn: Function(),
+  //   alt: [ name2, name3 ]
+  // }
+  //
+  this.__rules__ = [];
+
+  // Cached rule chains.
+  //
+  // First level - chain name, &#x27;&#x27; for default.
+  // Second level - diginal anchor for fast filtering by charcodes.
+  //
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.ruler.prototype" id="apidoc.module.markdown-it.ruler.prototype">module markdown-it.ruler.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.__compile__" id="apidoc.element.markdown-it.ruler.prototype.__compile__">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>__compile__
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__compile__ = function () {
+  var self = this;
+  var chains = [ &#x27;&#x27; ];
+
+  // collect unique names
+  self.__rules__.forEach(function (rule) {
+    if (!rule.enabled) { return; }
+
+    rule.alt.forEach(function (altName) {
+      if (chains.indexOf(altName) &#x3c; 0) {
+        chains.push(altName);
+      }
+    });
+  });
+
+  self.__cache__ = {};
+
+  chains.forEach(function (chain) {
+    self.__cache__[chain] = [];
+    self.__rules__.forEach(function (rule) {
+      if (!rule.enabled) { return; }
+
+      if (chain &#x26;&#x26; rule.alt.indexOf(chain) &#x3c; 0) { return; }
+
+      self.__cache__[chain].push(rule.fn);
+    });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * rules configuration, compiles caches if not exists and returns result.
+ *
+ * Default chain name is `&#x27;&#x27;` (empty string). It can&#x27;t be skipped. That&#x27;s
+ * done intentionally, to keep signature monomorphic for high speed.
+ **/
+Ruler.prototype.getRules = function (chainName) {
+  if (this.__cache__ === null) {
+    this.<span class="apidocCodeKeywordSpan">__compile__</span>();
+  }
+
+  // Chain can be empty, if rules disabled. But we still have to return Array.
+  return this.__cache__[chainName] || [];
+};
+
+module.exports = Ruler;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.__find__" id="apidoc.element.markdown-it.ruler.prototype.__find__">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>__find__
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">__find__ = function (name) {
+  for (var i = 0; i &#x3c; this.__rules__.length; i++) {
+    if (this.__rules__[i].name === name) {
+      return i;
+    }
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ *
+ * md.core.ruler.at(&#x27;replacements&#x27;, function replace(state) {
+ *   //...
+ * });
+ * ```
+ **/
+Ruler.prototype.at = function (name, fn, options) {
+var index = this.<span class="apidocCodeKeywordSpan">__find__</span>(name);
+var opt = options || {};
+
+if (index === -1) { throw new Error(&#x27;Parser rule not found: &#x27; + name); }
+
+this.__rules__[index].fn = fn;
+this.__rules__[index].alt = opt.alt || [];
+this.__cache__ = null;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.after" id="apidoc.element.markdown-it.ruler.prototype.after">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>after
+        <span class="apidocSignatureSpan">(afterName, ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">after = function (afterName, ruleName, fn, options) {
+  var index = this.__find__(afterName);
+  var opt = options || {};
+
+  if (index === -1) { throw new Error(&#x27;Parser rule not found: &#x27; + afterName); }
+
+  this.__rules__.splice(index + 1, 0, {
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ });
+
+ this.__cache__ = null;
+};
+
+
+/**
+* Ruler.<span class="apidocCodeKeywordSpan">after</span>(afterName, ruleName, fn [, options])
+* - afterName (String): new rule will be added after this one.
+* - ruleName (String): name of added rule.
+* - fn (Function): rule function.
+* - options (Object): rule options (not mandatory).
+*
+* Add new rule to chain after one with given name. See also
+* [[Ruler.before]], [[Ruler.push]].
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.at" id="apidoc.element.markdown-it.ruler.prototype.at">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>at
+        <span class="apidocSignatureSpan">(name, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">at = function (name, fn, options) {
+  var index = this.__find__(name);
+  var opt = options || {};
+
+  if (index === -1) { throw new Error(&#x27;Parser rule not found: &#x27; + name); }
+
+  this.__rules__[index].fn = fn;
+  this.__rules__[index].alt = opt.alt || [];
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     self.__cache__[chain].push(rule.fn);
+   });
+ });
+};
+
+
+/**
+* Ruler.<span class="apidocCodeKeywordSpan">at</span>(name, fn [, options])
+* - name (String): rule name to replace.
+* - fn (Function): new rule function.
+* - options (Object): new rule options (not mandatory).
+*
+* Replace rule by name with new function &#x26; options. Throws error if name not
+* found.
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.before" id="apidoc.element.markdown-it.ruler.prototype.before">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>before
+        <span class="apidocSignatureSpan">(beforeName, ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">before = function (beforeName, ruleName, fn, options) {
+  var index = this.__find__(beforeName);
+  var opt = options || {};
+
+  if (index === -1) { throw new Error(&#x27;Parser rule not found: &#x27; + beforeName); }
+
+  this.__rules__.splice(index, 0, {
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ this.__rules__[index].fn = fn;
+ this.__rules__[index].alt = opt.alt || [];
+ this.__cache__ = null;
+};
+
+
+/**
+* Ruler.<span class="apidocCodeKeywordSpan">before</span>(beforeName, ruleName, fn [, options])
+* - beforeName (String): new rule will be added before this one.
+* - ruleName (String): name of added rule.
+* - fn (Function): rule function.
+* - options (Object): rule options (not mandatory).
+*
+* Add new rule to chain before one with given name. See also
+* [[Ruler.after]], [[Ruler.push]].
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.disable" id="apidoc.element.markdown-it.ruler.prototype.disable">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>disable
+        <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">disable = function (list, ignoreInvalid) {
+  if (!Array.isArray(list)) { list = [ list ]; }
+
+  var result = [];
+
+  // Search by name and disable
+  list.forEach(function (name) {
+    var idx = this.__find__(name);
+
+    if (idx &#x3c; 0) {
+      if (ignoreInvalid) { return; }
+      throw new Error(&#x27;Rules manager: invalid rule name &#x27; + name);
+    }
+    this.__rules__[idx].enabled = false;
+    result.push(name);
+  }, this);
+
+  this.__cache__ = null;
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+By default all rules are enabled, but can be restricted by options. On plugin
+load all its rules are enabled automatically.
+
+```js
+// Activate/deactivate rules, with curring
+var md = require(&#x27;markdown-it&#x27;)()
+          .<span class="apidocCodeKeywordSpan">disable</span>([ &#x27;link&#x27;, &#x27;image&#x27; ])
+          .enable([ &#x27;link&#x27; ])
+          .enable(&#x27;image&#x27;);
+
+// Enable everything
+md = require(&#x27;markdown-it&#x27;)({
+html: true,
+linkify: true,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.enable" id="apidoc.element.markdown-it.ruler.prototype.enable">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>enable
+        <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enable = function (list, ignoreInvalid) {
+  if (!Array.isArray(list)) { list = [ list ]; }
+
+  var result = [];
+
+  // Search by name and enable
+  list.forEach(function (name) {
+    var idx = this.__find__(name);
+
+    if (idx &#x3c; 0) {
+      if (ignoreInvalid) { return; }
+      throw new Error(&#x27;Rules manager: invalid rule name &#x27; + name);
+    }
+    this.__rules__[idx].enabled = true;
+    result.push(name);
+  }, this);
+
+  this.__cache__ = null;
+  return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+By default all rules are enabled, but can be restricted by options. On plugin
+load all its rules are enabled automatically.
+
+```js
+// Activate/deactivate rules, with curring
+var md = require(&#x27;markdown-it&#x27;)()
+          .disable([ &#x27;link&#x27;, &#x27;image&#x27; ])
+          .<span class="apidocCodeKeywordSpan">enable</span>([ &#x27;link&#x27; ])
+          .enable(&#x27;image&#x27;);
+
+// Enable everything
+md = require(&#x27;markdown-it&#x27;)({
+html: true,
+linkify: true,
+typographer: true,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.enableOnly" id="apidoc.element.markdown-it.ruler.prototype.enableOnly">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>enableOnly
+        <span class="apidocSignatureSpan">(list, ignoreInvalid)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">enableOnly = function (list, ignoreInvalid) {
+  if (!Array.isArray(list)) { list = [ list ]; }
+
+  this.__rules__.forEach(function (rule) { rule.enabled = false; });
+
+  this.enable(list, ignoreInvalid);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+ this.__cache__ = null;
+ return result;
+};
+
+
+/**
+* Ruler.<span class="apidocCodeKeywordSpan">enableOnly</span>(list [, ignoreInvalid])
+* - list (String|Array): list of rule names to enable (whitelist).
+* - ignoreInvalid (Boolean): set `true` to ignore errors when rule not found.
+*
+* Enable rules with given names, and disable everything else. If any rule name
+* not found - throw Error. Errors can be disabled by second param.
+*
+* See also [[Ruler.disable]], [[Ruler.enable]].
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.getRules" id="apidoc.element.markdown-it.ruler.prototype.getRules">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>getRules
+        <span class="apidocSignatureSpan">(chainName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRules = function (chainName) {
+  if (this.__cache__ === null) {
+    this.__compile__();
+  }
+
+  // Chain can be empty, if rules disabled. But we still have to return Array.
+  return this.__cache__[chainName] || [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+
+// Generate tokens for input range
+//
+ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
+var ok, i,
+    rules = this.ruler.<span class="apidocCodeKeywordSpan">getRules</span>(&#x27;&#x27;),
+    len = rules.length,
+    line = startLine,
+    hasEmptyLines = false,
+    maxNesting = state.md.options.maxNesting;
+
+while (line &#x3c; endLine) {
+  state.line = line = state.skipEmptyLines(line);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.ruler.prototype.push" id="apidoc.element.markdown-it.ruler.prototype.push">
+        function <span class="apidocSignatureSpan">markdown-it.ruler.prototype.</span>push
+        <span class="apidocSignatureSpan">(ruleName, fn, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (ruleName, fn, options) {
+  var opt = options || {};
+
+  this.__rules__.push({
+    name: ruleName,
+    enabled: true,
+    fn: fn,
+    alt: opt.alt || []
+  });
+
+  this.__cache__ = null;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   * ParserBlock#ruler -&#x3e; Ruler
+   *
+   * [[Ruler]] instance. Keep configuration of block rules.
+   **/
+  this.ruler = new Ruler();
+
+  for (var i = 0; i &#x3c; _rules.length; i++) {
+    this.ruler.<span class="apidocCodeKeywordSpan">push</span>(_rules[i][0], _rules[i][1], { alt: (_rules[i][2] || []).slice() });
+  }
+}
+
+
+// Generate tokens for input range
+//
+ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.token" id="apidoc.module.markdown-it.token">module markdown-it.token</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.token" id="apidoc.element.markdown-it.token.token">
+        function <span class="apidocSignatureSpan">markdown-it.</span>token
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Token(type, tag, nesting) {
+<span class="apidocCodeCommentSpan">  /**
+   * Token#type -&#x3e; String
+   *
+   * Type of the token (string, e.g. &#x22;paragraph_open&#x22;)
+   **/
+</span>  this.type     = type;
+
+  /**
+   * Token#tag -&#x3e; String
+   *
+   * html tag name, e.g. &#x22;p&#x22;
+   **/
+  this.tag      = tag;
+
+  /**
+   * Token#attrs -&#x3e; Array
+   *
+   * Html attributes. Format: `[ [ name1, value1 ], [ name2, value2 ] ]`
+   **/
+  this.attrs    = null;
+
+  /**
+   * Token#map -&#x3e; Array
+   *
+   * Source map info. Format: `[ line_begin, line_end ]`
+   **/
+  this.map      = null;
+
+  /**
+   * Token#nesting -&#x3e; Number
+   *
+   * Level change (number in {-1, 0, 1} set), where:
+   *
+   * -  `1` means the tag is opening
+   * -  `0` means the tag is self-closing
+   * - `-1` means the tag is closing
+   **/
+  this.nesting  = nesting;
+
+  /**
+   * Token#level -&#x3e; Number
+   *
+   * nesting level, the same as `state.level`
+   **/
+  this.level    = 0;
+
+  /**
+   * Token#children -&#x3e; Array
+   *
+   * An array of child nodes (inline and img tokens)
+   **/
+  this.children = null;
+
+  /**
+   * Token#content -&#x3e; String
+   *
+   * In a case of self-closing tag (code, html, fence, etc.),
+   * it has contents of this tag.
+   **/
+  this.content  = &#x27;&#x27;;
+
+  /**
+   * Token#markup -&#x3e; String
+   *
+   * &#x27;*&#x27; or &#x27;_&#x27; for emphasis, fence string for fence, etc.
+   **/
+  this.markup   = &#x27;&#x27;;
+
+  /**
+   * Token#info -&#x3e; String
+   *
+   * fence infostring
+   **/
+  this.info     = &#x27;&#x27;;
+
+  /**
+   * Token#meta -&#x3e; Object
+   *
+   * A place for plugins to store an arbitrary data
+   **/
+  this.meta     = null;
+
+  /**
+   * Token#block -&#x3e; Boolean
+   *
+   * True for block-level tokens, false for inline tokens.
+   * Used in renderer to calculate line breaks
+   **/
+  this.block    = false;
+
+  /**
+   * Token#hidden -&#x3e; Boolean
+   *
+   * If it&#x27;s true, ignore this element when rendering. Used for tight lists
+   * to hide paragraphs.
+   **/
+  this.hidden   = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.token.prototype" id="apidoc.module.markdown-it.token.prototype">module markdown-it.token.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.prototype.attrGet" id="apidoc.element.markdown-it.token.prototype.attrGet">
+        function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrGet
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attrGet(name) {
+  var idx = this.attrIndex(name), value = null;
+  if (idx &#x3e;= 0) {
+    value = this.attrs[idx][1];
+  }
+  return value;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  this.attrs[idx] = attrData;
+}
+};
+
+
+/**
+ * Token.<span class="apidocCodeKeywordSpan">attrGet</span>(name)
+ *
+ * Get the value of attribute `name`, or null if it does not exist.
+ **/
+Token.prototype.attrGet = function attrGet(name) {
+var idx = this.attrIndex(name), value = null;
+if (idx &#x3e;= 0) {
+  value = this.attrs[idx][1];
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.prototype.attrIndex" id="apidoc.element.markdown-it.token.prototype.attrIndex">
+        function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrIndex
+        <span class="apidocSignatureSpan">(name)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attrIndex(name) {
+  var attrs, i, len;
+
+  if (!this.attrs) { return -1; }
+
+  attrs = this.attrs;
+
+  for (i = 0, len = attrs.length; i &#x3c; len; i++) {
+    if (attrs[i][0] === name) { return i; }
+  }
+  return -1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+return highlighted + &#x27;\n&#x27;;
+  }
+
+  // If language exists, inject class gently, without mudofying original token.
+  // May be, one day we will add .clone() for token and simplify this part, but
+  // now we prefer to keep things local.
+  if (info) {
+i        = token.<span class="apidocCodeKeywordSpan">attrIndex</span>(&#x27;class&#x27;);
+tmpAttrs = token.attrs ? token.attrs.slice() : [];
+
+if (i &#x3c; 0) {
+  tmpAttrs.push([ &#x27;class&#x27;, options.langPrefix + langName ]);
+} else {
+  tmpAttrs[i][1] += &#x27; &#x27; + options.langPrefix + langName;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.prototype.attrJoin" id="apidoc.element.markdown-it.token.prototype.attrJoin">
+        function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrJoin
+        <span class="apidocSignatureSpan">(name, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attrJoin(name, value) {
+  var idx = this.attrIndex(name);
+
+  if (idx &#x3c; 0) {
+    this.attrPush([ name, value ]);
+  } else {
+    this.attrs[idx][1] = this.attrs[idx][1] + &#x27; &#x27; + value;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  value = this.attrs[idx][1];
+}
+return value;
+};
+
+
+/**
+ * Token.<span class="apidocCodeKeywordSpan">attrJoin</span>(name, value)
+ *
+ * Join value to existing attribute via space. Or create new attribute if not
+ * exists. Useful to operate with token classes.
+ **/
+Token.prototype.attrJoin = function attrJoin(name, value) {
+var idx = this.attrIndex(name);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.prototype.attrPush" id="apidoc.element.markdown-it.token.prototype.attrPush">
+        function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrPush
+        <span class="apidocSignatureSpan">(attrData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attrPush(attrData) {
+  if (this.attrs) {
+    this.attrs.push(attrData);
+  } else {
+    this.attrs = [ attrData ];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (attrs[i][0] === name) { return i; }
+}
+return -1;
+};
+
+
+/**
+ * Token.<span class="apidocCodeKeywordSpan">attrPush</span>(attrData)
+ *
+ * Add `[ name, value ]` attribute to list. Init attrs if necessary
+ **/
+Token.prototype.attrPush = function attrPush(attrData) {
+if (this.attrs) {
+  this.attrs.push(attrData);
+} else {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.token.prototype.attrSet" id="apidoc.element.markdown-it.token.prototype.attrSet">
+        function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrSet
+        <span class="apidocSignatureSpan">(name, value)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function attrSet(name, value) {
+  var idx = this.attrIndex(name),
+      attrData = [ name, value ];
+
+  if (idx &#x3c; 0) {
+    this.attrPush(attrData);
+  } else {
+    this.attrs[idx] = attrData;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+} else {
+  this.attrs = [ attrData ];
+}
+};
+
+
+/**
+ * Token.<span class="apidocCodeKeywordSpan">attrSet</span>(name, value)
+ *
+ * Set `name` attribute to `value`. Override old value if exists.
+ **/
+Token.prototype.attrSet = function attrSet(name, value) {
+var idx = this.attrIndex(name),
+    attrData = [ name, value ];
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
