@@ -1,0 +1,65 @@
+<svg height="990" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="990" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">  0.  2017-04-15 22:07:55 +0000   546863 bytes  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-15 22:07:55 +0000    11174 bytes  CHANGELOG.md</tspan>
+<tspan x="10" y="58">  2.  2017-04-15 22:07:55 +0000     1073 bytes  LICENSE</tspan>
+<tspan x="10" y="74">  3.  2017-04-15 22:07:55 +0000     9108 bytes  README.md</tspan>
+<tspan x="10" y="90">  4.  2017-04-15 22:07:55 +0000     2254 bytes  bin/markdown-it.js</tspan>
+<tspan x="10" y="106">  5.  2017-04-15 22:07:55 +0000   258231 bytes  dist/markdown-it.js</tspan>
+<tspan x="10" y="122">  6.  2017-04-15 22:07:55 +0000   106661 bytes  dist/markdown-it.min.js</tspan>
+<tspan x="10" y="138">  7.  2017-04-15 22:07:55 +0000       52 bytes  index.js</tspan>
+<tspan x="10" y="154">  8.  2017-04-15 22:07:55 +0000      142 bytes  lib/common/entities.js</tspan>
+<tspan x="10" y="170">  9.  2017-04-15 22:07:55 +0000      856 bytes  lib/common/html_blocks.js</tspan>
+<tspan x="10" y="186"> 10.  2017-04-15 22:07:55 +0000     1047 bytes  lib/common/html_re.js</tspan>
+<tspan x="10" y="202"> 11.  2017-04-15 22:07:55 +0000     7151 bytes  lib/common/utils.js</tspan>
+<tspan x="10" y="218"> 12.  2017-04-15 22:07:55 +0000      243 bytes  lib/helpers/index.js</tspan>
+<tspan x="10" y="234"> 13.  2017-04-15 22:07:55 +0000     1590 bytes  lib/helpers/parse_link_destination.js</tspan>
+<tspan x="10" y="250"> 14.  2017-04-15 22:07:55 +0000     1013 bytes  lib/helpers/parse_link_label.js</tspan>
+<tspan x="10" y="266"> 15.  2017-04-15 22:07:55 +0000     1075 bytes  lib/helpers/parse_link_title.js</tspan>
+<tspan x="10" y="282"> 16.  2017-04-15 22:07:55 +0000    17907 bytes  lib/index.js</tspan>
+<tspan x="10" y="298"> 17.  2017-04-15 22:07:55 +0000     3453 bytes  lib/parser_block.js</tspan>
+<tspan x="10" y="314"> 18.  2017-04-15 22:07:55 +0000     1184 bytes  lib/parser_core.js</tspan>
+<tspan x="10" y="330"> 19.  2017-04-15 22:07:55 +0000     4498 bytes  lib/parser_inline.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-15 22:07:55 +0000     1948 bytes  lib/presets/commonmark.js</tspan>
+<tspan x="10" y="362"> 21.  2017-04-15 22:07:55 +0000     1341 bytes  lib/presets/default.js</tspan>
+<tspan x="10" y="378"> 22.  2017-04-15 22:07:55 +0000     1689 bytes  lib/presets/zero.js</tspan>
+<tspan x="10" y="394"> 23.  2017-04-15 22:07:55 +0000     8929 bytes  lib/renderer.js</tspan>
+<tspan x="10" y="410"> 24.  2017-04-15 22:07:55 +0000     8651 bytes  lib/ruler.js</tspan>
+<tspan x="10" y="426"> 25.  2017-04-15 22:07:55 +0000     8005 bytes  lib/rules_block/blockquote.js</tspan>
+<tspan x="10" y="442"> 26.  2017-04-15 22:07:55 +0000      721 bytes  lib/rules_block/code.js</tspan>
+<tspan x="10" y="458"> 27.  2017-04-15 22:07:55 +0000     2447 bytes  lib/rules_block/fence.js</tspan>
+<tspan x="10" y="474"> 28.  2017-04-15 22:07:55 +0000     1545 bytes  lib/rules_block/heading.js</tspan>
+<tspan x="10" y="490"> 29.  2017-04-15 22:07:55 +0000     1123 bytes  lib/rules_block/hr.js</tspan>
+<tspan x="10" y="506"> 30.  2017-04-15 22:07:55 +0000     2278 bytes  lib/rules_block/html_block.js</tspan>
+<tspan x="10" y="522"> 31.  2017-04-15 22:07:55 +0000     2539 bytes  lib/rules_block/lheading.js</tspan>
+<tspan x="10" y="538"> 32.  2017-04-15 22:07:55 +0000     8727 bytes  lib/rules_block/list.js</tspan>
+<tspan x="10" y="554"> 33.  2017-04-15 22:07:55 +0000     1574 bytes  lib/rules_block/paragraph.js</tspan>
+<tspan x="10" y="570"> 34.  2017-04-15 22:07:55 +0000     5321 bytes  lib/rules_block/reference.js</tspan>
+<tspan x="10" y="586"> 35.  2017-04-15 22:07:55 +0000     5942 bytes  lib/rules_block/state_block.js</tspan>
+<tspan x="10" y="602"> 36.  2017-04-15 22:07:55 +0000     5730 bytes  lib/rules_block/table.js</tspan>
+<tspan x="10" y="618"> 37.  2017-04-15 22:07:55 +0000      360 bytes  lib/rules_core/block.js</tspan>
+<tspan x="10" y="634"> 38.  2017-04-15 22:07:55 +0000      308 bytes  lib/rules_core/inline.js</tspan>
+<tspan x="10" y="650"> 39.  2017-04-15 22:07:55 +0000     3993 bytes  lib/rules_core/linkify.js</tspan>
+<tspan x="10" y="666"> 40.  2017-04-15 22:07:55 +0000      350 bytes  lib/rules_core/normalize.js</tspan>
+<tspan x="10" y="682"> 41.  2017-04-15 22:07:55 +0000     2792 bytes  lib/rules_core/replacements.js</tspan>
+<tspan x="10" y="698"> 42.  2017-04-15 22:07:55 +0000     5383 bytes  lib/rules_core/smartquotes.js</tspan>
+<tspan x="10" y="714"> 43.  2017-04-15 22:07:55 +0000      349 bytes  lib/rules_core/state_core.js</tspan>
+<tspan x="10" y="730"> 44.  2017-04-15 22:07:55 +0000     2004 bytes  lib/rules_inline/autolink.js</tspan>
+<tspan x="10" y="746"> 45.  2017-04-15 22:07:55 +0000     1120 bytes  lib/rules_inline/backticks.js</tspan>
+<tspan x="10" y="762"> 46.  2017-04-15 22:07:55 +0000     1162 bytes  lib/rules_inline/balance_pairs.js</tspan>
+<tspan x="10" y="778"> 47.  2017-04-15 22:07:55 +0000     3540 bytes  lib/rules_inline/emphasis.js</tspan>
+<tspan x="10" y="794"> 48.  2017-04-15 22:07:55 +0000     1432 bytes  lib/rules_inline/entity.js</tspan>
+<tspan x="10" y="810"> 49.  2017-04-15 22:07:55 +0000     1079 bytes  lib/rules_inline/escape.js</tspan>
+<tspan x="10" y="826"> 50.  2017-04-15 22:07:55 +0000     1013 bytes  lib/rules_inline/html_inline.js</tspan>
+<tspan x="10" y="842"> 51.  2017-04-15 22:07:55 +0000     3862 bytes  lib/rules_inline/image.js</tspan>
+<tspan x="10" y="858"> 52.  2017-04-15 22:07:55 +0000     3880 bytes  lib/rules_inline/link.js</tspan>
+<tspan x="10" y="874"> 53.  2017-04-15 22:07:55 +0000     1088 bytes  lib/rules_inline/newline.js</tspan>
+<tspan x="10" y="890"> 54.  2017-04-15 22:07:55 +0000     3432 bytes  lib/rules_inline/state_inline.js</tspan>
+<tspan x="10" y="906"> 55.  2017-04-15 22:07:55 +0000     2635 bytes  lib/rules_inline/strikethrough.js</tspan>
+<tspan x="10" y="922"> 56.  2017-04-15 22:07:55 +0000     2125 bytes  lib/rules_inline/text.js</tspan>
+<tspan x="10" y="938"> 57.  2017-04-15 22:07:55 +0000      768 bytes  lib/rules_inline/text_collapse.js</tspan>
+<tspan x="10" y="954"> 58.  2017-04-15 22:07:55 +0000     3650 bytes  lib/token.js</tspan>
+<tspan x="10" y="970"> 59.  2017-04-15 22:07:55 +0000     3316 bytes  package.json</tspan>
+</text>
+</svg>
