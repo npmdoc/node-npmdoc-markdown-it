@@ -110,9 +110,27 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.toString">
-            function <span class="apidocSignatureSpan">markdown-it.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_block
+            <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_core">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_core
+            <span class="apidocSignatureSpan">(src, md, env)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_inline
+            <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
             </a>
 
         </li>
@@ -123,6 +141,12 @@
             function <span class="apidocSignatureSpan">markdown-it.</span>token
             <span class="apidocSignatureSpan">(type, tag, nesting)</span>
             </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>emphasis</span>
 
         </li>
 
@@ -158,7 +182,59 @@
 
         <li>
 
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>state_block.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>state_core.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>state_inline.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>strikethrough</span>
+
+        </li>
+
+        <li>
+
             <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>token.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.</span>utils</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.emphasis">module markdown-it.emphasis</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.emphasis.postProcess">
+            function <span class="apidocSignatureSpan">markdown-it.emphasis.</span>postProcess
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.emphasis.tokenize">
+            function <span class="apidocSignatureSpan">markdown-it.emphasis.</span>tokenize
+            <span class="apidocSignatureSpan">(state, silent)</span>
+            </a>
 
         </li>
 
@@ -465,13 +541,199 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.toString">module markdown-it.toString</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_block">module markdown-it.state_block</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.toString.toString">
-            function <span class="apidocSignatureSpan">markdown-it.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.state_block">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_block
+            <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_block.prototype">module markdown-it.state_block.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.Token">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>Token
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.getLines">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>getLines
+            <span class="apidocSignatureSpan">(begin, end, indent, keepLastLF)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.isEmpty">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>isEmpty
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.push">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>push
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.skipChars">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipChars
+            <span class="apidocSignatureSpan">(pos, code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.skipCharsBack">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipCharsBack
+            <span class="apidocSignatureSpan">(pos, code, min)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.skipEmptyLines">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipEmptyLines
+            <span class="apidocSignatureSpan">(from)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.skipSpaces">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipSpaces
+            <span class="apidocSignatureSpan">(pos)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_block.prototype.skipSpacesBack">
+            function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipSpacesBack
+            <span class="apidocSignatureSpan">(pos, min)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_core">module markdown-it.state_core</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_core.state_core">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_core
+            <span class="apidocSignatureSpan">(src, md, env)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_core.prototype">module markdown-it.state_core.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_core.prototype.Token">
+            function <span class="apidocSignatureSpan">markdown-it.state_core.prototype.</span>Token
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_inline">module markdown-it.state_inline</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline.state_inline">
+            function <span class="apidocSignatureSpan">markdown-it.</span>state_inline
+            <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.state_inline.prototype">module markdown-it.state_inline.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline.prototype.Token">
+            function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>Token
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline.prototype.push">
+            function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>push
+            <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline.prototype.pushPending">
+            function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>pushPending
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.state_inline.prototype.scanDelims">
+            function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>scanDelims
+            <span class="apidocSignatureSpan">(start, canSplitWord)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.strikethrough">module markdown-it.strikethrough</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.strikethrough.postProcess">
+            function <span class="apidocSignatureSpan">markdown-it.strikethrough.</span>postProcess
+            <span class="apidocSignatureSpan">(state)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.strikethrough.tokenize">
+            function <span class="apidocSignatureSpan">markdown-it.strikethrough.</span>tokenize
+            <span class="apidocSignatureSpan">(state, silent)</span>
             </a>
 
         </li>
@@ -535,6 +797,151 @@
             function <span class="apidocSignatureSpan">markdown-it.token.prototype.</span>attrSet
             <span class="apidocSignatureSpan">(name, value)</span>
             </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.markdown-it.utils">module markdown-it.utils</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.arrayReplaceAt">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>arrayReplaceAt
+            <span class="apidocSignatureSpan">(src, pos, newElements)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.assign">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>assign
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.escapeHtml">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>escapeHtml
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.escapeRE">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>escapeRE
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.fromCodePoint">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>fromCodePoint
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.has">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>has
+            <span class="apidocSignatureSpan">(object, key)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isMdAsciiPunct">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isMdAsciiPunct
+            <span class="apidocSignatureSpan">(ch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isPunctChar">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isPunctChar
+            <span class="apidocSignatureSpan">(ch)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isSpace">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isSpace
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isString">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isString
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isValidEntityCode">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isValidEntityCode
+            <span class="apidocSignatureSpan">(c)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.isWhiteSpace">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>isWhiteSpace
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.normalizeReference">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>normalizeReference
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.unescapeAll">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>unescapeAll
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.markdown-it.utils.unescapeMd">
+            function <span class="apidocSignatureSpan">markdown-it.utils.</span>unescapeMd
+            <span class="apidocSignatureSpan">(str)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">markdown-it.utils.</span>lib</span>
 
         </li>
 
@@ -848,14 +1255,156 @@
 
 
     <h2>
-        <a href="#apidoc.element.markdown-it.toString" id="apidoc.element.markdown-it.toString">
-        function <span class="apidocSignatureSpan">markdown-it.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.markdown-it.state_block" id="apidoc.element.markdown-it.state_block">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_block
+        <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
+    <li>description and source-code<pre class="apidocCodePre">function StateBlock(src, md, env, tokens) {
+  var ch, s, start, pos, len, indent, offset, indent_found;
+
+  this.src = src;
+
+  // link to parser instance
+  this.md     = md;
+
+  this.env = env;
+
+  //
+  // Internal state vartiables
+  //
+
+  this.tokens = tokens;
+
+  this.bMarks = [];  // line begin offsets for fast jumps
+  this.eMarks = [];  // line end offsets for fast jumps
+  this.tShift = [];  // offsets of the first non-space characters (tabs not expanded)
+  this.sCount = [];  // indents for each line (tabs expanded)
+
+  // An amount of virtual spaces (tabs expanded) between beginning
+  // of each line (bMarks) and real beginning of that line.
+  //
+  // It exists only as a hack because blockquotes override bMarks
+  // losing information in the process.
+  //
+  // It's used only when expanding tabs, you can think about it as
+  // an initial tab length, e.g. bsCount=21 applied to string `\t123`
+  // means first tab should be expanded to 4-21%4 === 3 spaces.
+  //
+  this.bsCount = [];
+
+  // block parser variables
+  this.blkIndent  = 0; // required block content indent
+                       // (for example, if we are in list)
+  this.line       = 0; // line index in src
+  this.lineMax    = 0; // lines count
+  this.tight      = false;  // loose/tight mode for lists
+  this.ddIndent   = -1; // indent of the current dd block (-1 if there isn't any)
+
+  // can be 'blockquote', 'list', 'root', 'paragraph' or 'reference'
+  // used in lists to determine if they interrupt a paragraph
+  this.parentType = 'root';
+
+  this.level = 0;
+
+  // renderer
+  this.result = '';
+
+  // Create caches
+  // Generate markers.
+  s = this.src;
+  indent_found = false;
+
+  for (start = pos = indent = offset = 0, len = s.length; pos &lt; len; pos++) {
+    ch = s.charCodeAt(pos);
+
+    if (!indent_found) {
+      if (isSpace(ch)) {
+        indent++;
+
+        if (ch === 0x09) {
+          offset += 4 - offset % 4;
+        } else {
+          offset++;
+        }
+        continue;
+      } else {
+        indent_found = true;
+      }
+    }
+
+    if (ch === 0x0A || pos === len - 1) {
+      if (ch !== 0x0A) { pos++; }
+      this.bMarks.push(start);
+      this.eMarks.push(pos);
+      this.tShift.push(indent);
+      this.sCount.push(offset);
+      this.bsCount.push(0);
+
+      indent_found = false;
+      indent = 0;
+      offset = 0;
+      start = pos + 1;
+    }
+  }
+
+  // Push fake entry to simplify cache bounds checks
+  this.bMarks.push(s.length);
+  this.eMarks.push(s.length);
+  this.tShift.push(0);
+  this.sCount.push(0);
+  this.bsCount.push(0);
+
+  this.lineMax = this.bMarks.length - 1; // don't count last fake line
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_core" id="apidoc.element.markdown-it.state_core">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_core
+        <span class="apidocSignatureSpan">(src, md, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateCore(src, md, env) {
+  this.src = src;
+  this.env = env;
+  this.tokens = [];
+  this.inlineMode = false;
+  this.md = md; // link to parser instance
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline" id="apidoc.element.markdown-it.state_inline">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_inline
+        <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateInline(src, md, env, outTokens) {
+  this.src = src;
+  this.env = env;
+  this.md = md;
+  this.tokens = outTokens;
+
+  this.pos = 0;
+  this.posMax = this.src.length;
+  this.level = 0;
+  this.pending = '';
+  this.pendingLevel = 0;
+
+  this.cache = {};        // Stores { start: end } pairs. Useful for backtrack
+                          // optimization of pairs parse (emphasis, strikes).
+
+  this.delimiters = [];   // Emphasis-like delimiters
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
@@ -982,6 +1531,179 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.emphasis" id="apidoc.module.markdown-it.emphasis">module markdown-it.emphasis</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.emphasis.postProcess" id="apidoc.element.markdown-it.emphasis.postProcess">
+        function <span class="apidocSignatureSpan">markdown-it.emphasis.</span>postProcess
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function emphasis(state) {
+  var i,
+      startDelim,
+      endDelim,
+      token,
+      ch,
+      isStrong,
+      delimiters = state.delimiters,
+      max = state.delimiters.length;
+
+  for (i = 0; i &lt; max; i++) {
+    startDelim = delimiters[i];
+
+    if (startDelim.marker !== 0x5F/* _ */ &amp;&amp; startDelim.marker !== 0x2A/* * */) {
+      continue;
+    }
+
+    // Process only opening markers
+    if (startDelim.end === -1) {
+      continue;
+    }
+
+    endDelim = delimiters[startDelim.end];
+
+    // If the next delimiter has the same marker and is adjacent to this one,
+    // merge those into one strong delimiter.
+    //
+    // `&lt;em&gt;&lt;em&gt;whatever&lt;/em&gt;&lt;/em&gt;` -&gt; `&lt;strong&gt;whatever&lt;/strong&gt;`
+    //
+    isStrong = i + 1 &lt; max &amp;&amp;
+               delimiters[i + 1].end === startDelim.end - 1 &amp;&amp;
+               delimiters[i + 1].token === startDelim.token + 1 &amp;&amp;
+               delimiters[startDelim.end - 1].token === endDelim.token - 1 &amp;&amp;
+               delimiters[i + 1].marker === startDelim.marker;
+
+    ch = String.fromCharCode(startDelim.marker);
+
+    token         = state.tokens[startDelim.token];
+    token.type    = isStrong ? 'strong_open' : 'em_open';
+    token.tag     = isStrong ? 'strong' : 'em';
+    token.nesting = 1;
+    token.markup  = isStrong ? ch + ch : ch;
+    token.content = '';
+
+    token         = state.tokens[endDelim.token];
+    token.type    = isStrong ? 'strong_close' : 'em_close';
+    token.tag     = isStrong ? 'strong' : 'em';
+    token.nesting = -1;
+    token.markup  = isStrong ? ch + ch : ch;
+    token.content = '';
+
+    if (isStrong) {
+      state.tokens[delimiters[i + 1].token].content = '';
+      state.tokens[delimiters[startDelim.end - 1].token].content = '';
+      i++;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.emphasis.tokenize" id="apidoc.element.markdown-it.emphasis.tokenize">
+        function <span class="apidocSignatureSpan">markdown-it.emphasis.</span>tokenize
+        <span class="apidocSignatureSpan">(state, silent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function emphasis(state, silent) {
+  var i, scanned, token,
+      start = state.pos,
+      marker = state.src.charCodeAt(start);
+
+  if (silent) { return false; }
+
+  if (marker !== 0x5F /* _ */ &amp;&amp; marker !== 0x2A /* * */) { return false; }
+
+  scanned = state.scanDelims(state.pos, marker === 0x2A);
+
+  for (i = 0; i &lt; scanned.length; i++) {
+    token         = state.push('text', '', 0);
+    token.content = String.fromCharCode(marker);
+
+    state.delimiters.push({
+      // Char code of the starting marker (number).
+      //
+      marker: marker,
+
+      // Total length of these series of delimiters.
+      //
+      length: scanned.length,
+
+      // An amount of characters before this one that's equivalent to
+      // current one. In plain English: if this delimiter does not open
+      // an emphasis, neither do previous `jump` characters.
+      //
+      // Used to skip sequences like "*****" in one step, for 1st asterisk
+      // value will be 0, for 2nd it's 1 and so on.
+      //
+      jump:   i,
+
+      // A position of the token this delimiter corresponds to.
+      //
+      token:  state.tokens.length - 1,
+
+      // Token level.
+      //
+      level:  state.level,
+
+      // If this delimiter is matched as a valid opener, `end` will be
+      // equal to its position, otherwise it's `-1`.
+      //
+      end:    -1,
+
+      // Boolean flags that determine if this delimiter could open or close
+      // an emphasis.
+      //
+      open:   scanned.can_open,
+      close:  scanned.can_close
+    });
+  }
+
+  state.pos += scanned.length;
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.State(src, md, env, outTokens);
+
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require('./rules_block/state_block');
+
+
+module.exports = ParserBlock;
+...</pre></li>
+    </ul>
 
 
 </div>
@@ -1124,20 +1846,19 @@
   this.lineMax = this.bMarks.length - 1; // don't count last fake line
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * Process input string and push block tokens into `outTokens`
+ * and then pass updated object to renderer.
  **/
-ParserBlock.prototype.parse = function (src, md, env, outTokens) {
-  var state;
+MarkdownIt.prototype.parse = function (src, env) {
+  if (typeof src !== 'string') {
+    throw new Error('Input data should be a String');
+  }
 
-  if (!src) { return; }
+  var state = new this.core.<span class="apidocCodeKeywordSpan">State</span>(src, this, env);
 
-  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+  this.core.process(state);
 
-  this.tokenize(state, state.line, state.lineMax);
+  return state.tokens;
 };
-
-
-ParserBlock.prototype.State = require('./rules_block/state_block');
 ...</pre></li>
     </ul>
 
@@ -1160,21 +1881,21 @@ ParserBlock.prototype.State = require('./rules_block/state_block');
   this.tokenize(state, state.line, state.lineMax);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    state.line = line;
-  }
-}
-};
+
+////////////////////////////////////////////////////////////////////////////////
 
 
-/**
- * ParserBlock.<span class="apidocCodeKeywordSpan">parse</span>(str, md, env, outTokens)
- *
- * Process input string and push block tokens into `outTokens`
- **/
-ParserBlock.prototype.parse = function (src, md, env, outTokens) {
-var state;
+var RECODE_HOSTNAME_FOR = [ 'http:', 'https:', 'mailto:' ];
 
-if (!src) { return; }
+function normalizeLink(url) {
+var parsed = mdurl.<span class="apidocCodeKeywordSpan">parse</span>(url, true);
+
+if (parsed.hostname) {
+  // Encode hostnames in urls like:
+  // `http://host/`, `https://host/`, `mailto:user@host`, `//host/`
+  //
+  // We don't encode unknown schemas, because it's likely that we encode
+  // something we shouldn't (e.g. `skype:name` treated as `skype:host`)
 ...</pre></li>
     </ul>
 
@@ -1310,20 +2031,19 @@ module.exports = ParserBlock;
   this.md = md; // link to parser instance
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * Process input string and push block tokens into `outTokens`
+ * and then pass updated object to renderer.
  **/
-ParserBlock.prototype.parse = function (src, md, env, outTokens) {
-  var state;
+MarkdownIt.prototype.parse = function (src, env) {
+  if (typeof src !== 'string') {
+    throw new Error('Input data should be a String');
+  }
 
-  if (!src) { return; }
+  var state = new this.core.<span class="apidocCodeKeywordSpan">State</span>(src, this, env);
 
-  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+  this.core.process(state);
 
-  this.tokenize(state, state.line, state.lineMax);
+  return state.tokens;
 };
-
-
-ParserBlock.prototype.State = require('./rules_block/state_block');
 ...</pre></li>
     </ul>
 
@@ -1346,21 +2066,21 @@ ParserBlock.prototype.State = require('./rules_block/state_block');
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-for (var i = 0; i &lt; _rules.length; i++) {
-  this.ruler.push(_rules[i][0], _rules[i][1]);
-}
-}
+MarkdownIt.prototype.parse = function (src, env) {
+ if (typeof src !== 'string') {
+   throw new Error('Input data should be a String');
+ }
+
+ var state = new this.core.State(src, this, env);
+
+ this.core.<span class="apidocCodeKeywordSpan">process</span>(state);
+
+ return state.tokens;
+};
 
 
 /**
- * Core.<span class="apidocCodeKeywordSpan">process</span>(state)
- *
- * Executes core chain rules.
- **/
-Core.prototype.process = function (state) {
-var i, l, rules;
-
-rules = this.ruler.getRules('');
+* MarkdownIt.render(src [, env]) -&gt; String
 ...</pre></li>
     </ul>
 
@@ -1439,20 +2159,19 @@ rules = this.ruler.getRules('');
   this.delimiters = [];   // Emphasis-like delimiters
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
- * Process input string and push block tokens into `outTokens`
+ * and then pass updated object to renderer.
  **/
-ParserBlock.prototype.parse = function (src, md, env, outTokens) {
-  var state;
+MarkdownIt.prototype.parse = function (src, env) {
+  if (typeof src !== 'string') {
+    throw new Error('Input data should be a String');
+  }
 
-  if (!src) { return; }
+  var state = new this.core.<span class="apidocCodeKeywordSpan">State</span>(src, this, env);
 
-  state = new this.<span class="apidocCodeKeywordSpan">State</span>(src, md, env, outTokens);
+  this.core.process(state);
 
-  this.tokenize(state, state.line, state.lineMax);
+  return state.tokens;
 };
-
-
-ParserBlock.prototype.State = require('./rules_block/state_block');
 ...</pre></li>
     </ul>
 
@@ -1479,21 +2198,21 @@ ParserBlock.prototype.State = require('./rules_block/state_block');
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-    state.line = line;
-  }
-}
-};
+
+////////////////////////////////////////////////////////////////////////////////
 
 
-/**
- * ParserBlock.<span class="apidocCodeKeywordSpan">parse</span>(str, md, env, outTokens)
- *
- * Process input string and push block tokens into `outTokens`
- **/
-ParserBlock.prototype.parse = function (src, md, env, outTokens) {
-var state;
+var RECODE_HOSTNAME_FOR = [ 'http:', 'https:', 'mailto:' ];
 
-if (!src) { return; }
+function normalizeLink(url) {
+var parsed = mdurl.<span class="apidocCodeKeywordSpan">parse</span>(url, true);
+
+if (parsed.hostname) {
+  // Encode hostnames in urls like:
+  // `http://host/`, `https://host/`, `mailto:user@host`, `//host/`
+  //
+  // We don't encode unknown schemas, because it's likely that we encode
+  // something we shouldn't (e.g. `skype:name` treated as `skype:host`)
 ...</pre></li>
     </ul>
 
@@ -1549,7 +2268,23 @@ if (!src) { return; }
   if (!ok) { state.pos++; }
   cache[pos] = state.pos;
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  if (level === 0) {
+    found = true;
+    break;
+  }
+}
+
+prevPos = state.pos;
+state.md.inline.<span class="apidocCodeKeywordSpan">skipToken</span>(state);
+if (marker === 0x5B /* [ */) {
+  if (prevPos === state.pos - 1) {
+    // increase level if we find text `[`, which is not a part of any token
+    level++;
+  } else if (disableNested) {
+    state.pos = oldPos;
+    return -1;
+...</pre></li>
     </ul>
 
 
@@ -2299,21 +3034,21 @@ typographer: true,
   this.enable(list, ignoreInvalid);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
+if (!presets) { throw new Error('Wrong `markdown-it` preset, can\'t be empty'); }
 
- this.__cache__ = null;
- return result;
-};
+if (presets.options) { self.set(presets.options); }
 
-
-/**
-* Ruler.<span class="apidocCodeKeywordSpan">enableOnly</span>(list [, ignoreInvalid])
-* - list (String|Array): list of rule names to enable (whitelist).
-* - ignoreInvalid (Boolean): set `true` to ignore errors when rule not found.
-*
-* Enable rules with given names, and disable everything else. If any rule name
-* not found - throw Error. Errors can be disabled by second param.
-*
-* See also [[Ruler.disable]], [[Ruler.enable]].
+if (presets.components) {
+  Object.keys(presets.components).forEach(function (name) {
+    if (presets.components[name].rules) {
+      self[name].ruler.<span class="apidocCodeKeywordSpan">enableOnly</span>(presets.components[name].rules);
+    }
+    if (presets.components[name].rules2) {
+      self[name].ruler2.enableOnly(presets.components[name].rules2);
+    }
+  });
+}
+return this;
 ...</pre></li>
     </ul>
 
@@ -2375,21 +3110,22 @@ while (line &lt; endLine) {
   this.__cache__ = null;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-   * ParserBlock#ruler -&gt; Ruler
-   *
-   * [[Ruler]] instance. Keep configuration of block rules.
-   **/
-  this.ruler = new Ruler();
 
-  for (var i = 0; i &lt; _rules.length; i++) {
-    this.ruler.<span class="apidocCodeKeywordSpan">push</span>(_rules[i][0], _rules[i][1], { alt: (_rules[i][2] || []).slice() });
-  }
-}
+4.0.0 / 2015-03-11
+------------------
 
-
-// Generate tokens for input range
-//
-ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
+- Breaking internal API changes. See [v4 migration notes](https://github.com/markdown-it/markdown-it/blob/master/docs/4.0_migration
+.md). In usual case you will need to update plugins.
+- Token internals changed
+- Unified the most of renderer methods.
+- Changed tokens creation - use `state.<span class="apidocCodeKeywordSpan">push</span>(...)` (see sources)
+- Moved `normalizeUrl()` to root class as `.normalizeLink()` &amp;
+  added `normalizeLinkText()` method.
+- Moved `.validateUrl()` to root class and simplified logic - no more need to
+  replace entities.
+- Joined md unescape &amp; replace entities logic to `utils.unescapeAll()`.
+- Removed `replaceEntities()` in `utils`.
+- `md.utils.lib` now exposes useful libs for plugins.
 ...</pre></li>
     </ul>
 
@@ -2397,18 +3133,1210 @@ ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.markdown-it.toString" id="apidoc.module.markdown-it.toString">module markdown-it.toString</a></h1>
+<h1><a href="#apidoc.module.markdown-it.state_block" id="apidoc.module.markdown-it.state_block">module markdown-it.state_block</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.markdown-it.toString.toString" id="apidoc.element.markdown-it.toString.toString">
-        function <span class="apidocSignatureSpan">markdown-it.</span>toString
+        <a href="#apidoc.element.markdown-it.state_block.state_block" id="apidoc.element.markdown-it.state_block.state_block">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_block
+        <span class="apidocSignatureSpan">(src, md, env, tokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateBlock(src, md, env, tokens) {
+  var ch, s, start, pos, len, indent, offset, indent_found;
+
+  this.src = src;
+
+  // link to parser instance
+  this.md     = md;
+
+  this.env = env;
+
+  //
+  // Internal state vartiables
+  //
+
+  this.tokens = tokens;
+
+  this.bMarks = [];  // line begin offsets for fast jumps
+  this.eMarks = [];  // line end offsets for fast jumps
+  this.tShift = [];  // offsets of the first non-space characters (tabs not expanded)
+  this.sCount = [];  // indents for each line (tabs expanded)
+
+  // An amount of virtual spaces (tabs expanded) between beginning
+  // of each line (bMarks) and real beginning of that line.
+  //
+  // It exists only as a hack because blockquotes override bMarks
+  // losing information in the process.
+  //
+  // It's used only when expanding tabs, you can think about it as
+  // an initial tab length, e.g. bsCount=21 applied to string `\t123`
+  // means first tab should be expanded to 4-21%4 === 3 spaces.
+  //
+  this.bsCount = [];
+
+  // block parser variables
+  this.blkIndent  = 0; // required block content indent
+                       // (for example, if we are in list)
+  this.line       = 0; // line index in src
+  this.lineMax    = 0; // lines count
+  this.tight      = false;  // loose/tight mode for lists
+  this.ddIndent   = -1; // indent of the current dd block (-1 if there isn't any)
+
+  // can be 'blockquote', 'list', 'root', 'paragraph' or 'reference'
+  // used in lists to determine if they interrupt a paragraph
+  this.parentType = 'root';
+
+  this.level = 0;
+
+  // renderer
+  this.result = '';
+
+  // Create caches
+  // Generate markers.
+  s = this.src;
+  indent_found = false;
+
+  for (start = pos = indent = offset = 0, len = s.length; pos &lt; len; pos++) {
+    ch = s.charCodeAt(pos);
+
+    if (!indent_found) {
+      if (isSpace(ch)) {
+        indent++;
+
+        if (ch === 0x09) {
+          offset += 4 - offset % 4;
+        } else {
+          offset++;
+        }
+        continue;
+      } else {
+        indent_found = true;
+      }
+    }
+
+    if (ch === 0x0A || pos === len - 1) {
+      if (ch !== 0x0A) { pos++; }
+      this.bMarks.push(start);
+      this.eMarks.push(pos);
+      this.tShift.push(indent);
+      this.sCount.push(offset);
+      this.bsCount.push(0);
+
+      indent_found = false;
+      indent = 0;
+      offset = 0;
+      start = pos + 1;
+    }
+  }
+
+  // Push fake entry to simplify cache bounds checks
+  this.bMarks.push(s.length);
+  this.eMarks.push(s.length);
+  this.tShift.push(0);
+  this.sCount.push(0);
+  this.bsCount.push(0);
+
+  this.lineMax = this.bMarks.length - 1; // don't count last fake line
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.state_block.prototype" id="apidoc.module.markdown-it.state_block.prototype">module markdown-it.state_block.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.Token" id="apidoc.element.markdown-it.state_block.prototype.Token">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>Token
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Token(type, tag, nesting) {
+<span class="apidocCodeCommentSpan">  /**
+   * Token#type -&gt; String
+   *
+   * Type of the token (string, e.g. "paragraph_open")
+   **/
+</span>  this.type     = type;
+
+  /**
+   * Token#tag -&gt; String
+   *
+   * html tag name, e.g. "p"
+   **/
+  this.tag      = tag;
+
+  /**
+   * Token#attrs -&gt; Array
+   *
+   * Html attributes. Format: `[ [ name1, value1 ], [ name2, value2 ] ]`
+   **/
+  this.attrs    = null;
+
+  /**
+   * Token#map -&gt; Array
+   *
+   * Source map info. Format: `[ line_begin, line_end ]`
+   **/
+  this.map      = null;
+
+  /**
+   * Token#nesting -&gt; Number
+   *
+   * Level change (number in {-1, 0, 1} set), where:
+   *
+   * -  `1` means the tag is opening
+   * -  `0` means the tag is self-closing
+   * - `-1` means the tag is closing
+   **/
+  this.nesting  = nesting;
+
+  /**
+   * Token#level -&gt; Number
+   *
+   * nesting level, the same as `state.level`
+   **/
+  this.level    = 0;
+
+  /**
+   * Token#children -&gt; Array
+   *
+   * An array of child nodes (inline and img tokens)
+   **/
+  this.children = null;
+
+  /**
+   * Token#content -&gt; String
+   *
+   * In a case of self-closing tag (code, html, fence, etc.),
+   * it has contents of this tag.
+   **/
+  this.content  = '';
+
+  /**
+   * Token#markup -&gt; String
+   *
+   * '*' or '_' for emphasis, fence string for fence, etc.
+   **/
+  this.markup   = '';
+
+  /**
+   * Token#info -&gt; String
+   *
+   * fence infostring
+   **/
+  this.info     = '';
+
+  /**
+   * Token#meta -&gt; Object
+   *
+   * A place for plugins to store an arbitrary data
+   **/
+  this.meta     = null;
+
+  /**
+   * Token#block -&gt; Boolean
+   *
+   * True for block-level tokens, false for inline tokens.
+   * Used in renderer to calculate line breaks
+   **/
+  this.block    = false;
+
+  /**
+   * Token#hidden -&gt; Boolean
+   *
+   * If it's true, ignore this element when rendering. Used for tight lists
+   * to hide paragraphs.
+   **/
+  this.hidden   = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+
+module.exports = function block(state) {
+var token;
+
+if (state.inlineMode) {
+  token          = new state.<span class="apidocCodeKeywordSpan">Token</span>('inline', '', 0);
+  token.content  = state.src;
+  token.map      = [ 0, 1 ];
+  token.children = [];
+  state.tokens.push(token);
+} else {
+  state.md.block.parse(state.src, state.md, state.env, state.tokens);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.getLines" id="apidoc.element.markdown-it.state_block.prototype.getLines">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>getLines
+        <span class="apidocSignatureSpan">(begin, end, indent, keepLastLF)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getLines(begin, end, indent, keepLastLF) {
+  var i, lineIndent, ch, first, last, queue, lineStart,
+      line = begin;
+
+  if (begin &gt;= end) {
+    return '';
+  }
+
+  queue = new Array(end - begin);
+
+  for (i = 0; line &lt; end; line++, i++) {
+    lineIndent = 0;
+    lineStart = first = this.bMarks[line];
+
+    if (line + 1 &lt; end || keepLastLF) {
+      // No need for bounds check because we have fake entry on tail.
+      last = this.eMarks[line] + 1;
+    } else {
+      last = this.eMarks[line];
+    }
+
+    while (first &lt; last &amp;&amp; lineIndent &lt; indent) {
+      ch = this.src.charCodeAt(first);
+
+      if (isSpace(ch)) {
+        if (ch === 0x09) {
+          lineIndent += 4 - (lineIndent + this.bsCount[line]) % 4;
+        } else {
+          lineIndent++;
+        }
+      } else if (first - lineStart &lt; this.tShift[line]) {
+        // patched tShift masked characters to look like spaces (blockquotes, list markers)
+        lineIndent++;
+      } else {
+        break;
+      }
+
+      first++;
+    }
+
+    if (lineIndent &gt; indent) {
+      // partially expanding tabs in code blocks, e.g '\t\tfoobar'
+      // with indent=2 becomes '  \tfoobar'
+      queue[i] = new Array(lineIndent - indent + 1).join(' ') + this.src.slice(first, last);
+    } else {
+      queue[i] = this.src.slice(first, last);
+    }
+  }
+
+  return queue.join('');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    }
+    break;
+  }
+
+  state.line = last;
+
+  token         = state.push('code_block', 'code', 0);
+  token.content = state.<span class="apidocCodeKeywordSpan">getLines</span>(startLine, last, 4 + state.blkIndent, true);
+  token.map     = [ startLine, state.line ];
+
+  return true;
+};
+
+},{}],20:[function(require,module,exports){
+// fences (``` lang, ~~~ lang)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.isEmpty" id="apidoc.element.markdown-it.state_block.prototype.isEmpty">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>isEmpty
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isEmpty(line) {
+  return this.bMarks[line] + this.tShift[line] &gt;= this.eMarks[line];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+}
+
+// set state.tight iff we had an empty line before current tag
+// i.e. latest empty line should not count
+state.tight = !hasEmptyLines;
+
+// paragraph might "eat" one newline after it in nested lists
+if (state.<span class="apidocCodeKeywordSpan">isEmpty</span>(state.line - 1)) {
+  hasEmptyLines = true;
+}
+
+line = state.line;
+
+if (line &lt; endLine &amp;&amp; state.isEmpty(line)) {
+  hasEmptyLines = true;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.push" id="apidoc.element.markdown-it.state_block.prototype.push">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>push
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (type, tag, nesting) {
+  var token = new Token(type, tag, nesting);
+  token.block = true;
+
+  if (nesting &lt; 0) { this.level--; }
+  token.level = this.level;
+  if (nesting &gt; 0) { this.level++; }
+
+  this.tokens.push(token);
+  return token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+4.0.0 / 2015-03-11
+------------------
+
+- Breaking internal API changes. See [v4 migration notes](https://github.com/markdown-it/markdown-it/blob/master/docs/4.0_migration
+.md). In usual case you will need to update plugins.
+- Token internals changed
+- Unified the most of renderer methods.
+- Changed tokens creation - use `state.<span class="apidocCodeKeywordSpan">push</span>(...)` (see sources)
+- Moved `normalizeUrl()` to root class as `.normalizeLink()` &amp;
+  added `normalizeLinkText()` method.
+- Moved `.validateUrl()` to root class and simplified logic - no more need to
+  replace entities.
+- Joined md unescape &amp; replace entities logic to `utils.unescapeAll()`.
+- Removed `replaceEntities()` in `utils`.
+- `md.utils.lib` now exposes useful libs for plugins.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.skipChars" id="apidoc.element.markdown-it.state_block.prototype.skipChars">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipChars
+        <span class="apidocSignatureSpan">(pos, code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipChars(pos, code) {
+  for (var max = this.src.length; pos &lt; max; pos++) {
+    if (this.src.charCodeAt(pos) !== code) { break; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (marker !== 0x7E/* ~ */ &amp;&amp; marker !== 0x60 /* ` */) {
+  return false;
+}
+
+// scan marker length
+mem = pos;
+pos = state.<span class="apidocCodeKeywordSpan">skipChars</span>(pos, marker);
+
+len = pos - mem;
+
+if (len &lt; 3) { return false; }
+
+markup = state.src.slice(mem, pos);
+params = state.src.slice(pos, max);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.skipCharsBack" id="apidoc.element.markdown-it.state_block.prototype.skipCharsBack">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipCharsBack
+        <span class="apidocSignatureSpan">(pos, code, min)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipCharsBack(pos, code, min) {
+  if (pos &lt;= min) { return pos; }
+
+  while (pos &gt; min) {
+    if (code !== this.src.charCodeAt(--pos)) { return pos + 1; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (level &gt; 6 || (pos &lt; max &amp;&amp; !isSpace(ch))) { return false; }
+
+if (silent) { return true; }
+
+// Let's cut tails like '    ###  ' from the end of string
+
+max = state.skipSpacesBack(max, pos);
+tmp = state.<span class="apidocCodeKeywordSpan">skipCharsBack</span>(max, 0x23, pos); // #
+if (tmp &gt; pos &amp;&amp; isSpace(state.src.charCodeAt(tmp - 1))) {
+  max = tmp;
+}
+
+state.line = startLine + 1;
+
+token        = state.push('heading_open', 'h' + String(level), 1);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.skipEmptyLines" id="apidoc.element.markdown-it.state_block.prototype.skipEmptyLines">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipEmptyLines
+        <span class="apidocSignatureSpan">(from)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipEmptyLines(from) {
+  for (var max = this.lineMax; from &lt; max; from++) {
+    if (this.bMarks[from] + this.tShift[from] &lt; this.eMarks[from]) {
+      break;
+    }
+  }
+  return from;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  rules = this.ruler.getRules(''),
+  len = rules.length,
+  line = startLine,
+  hasEmptyLines = false,
+  maxNesting = state.md.options.maxNesting;
+
+  while (line &lt; endLine) {
+state.line = line = state.<span class="apidocCodeKeywordSpan">skipEmptyLines</span>(line);
+if (line &gt;= endLine) { break; }
+
+// Termination condition for nested calls.
+// Nested calls currently used for blockquotes &amp; lists
+if (state.sCount[line] &lt; state.blkIndent) { break; }
+
+// If nesting level exceeded - skip tail to the end. That's not ordinary
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.skipSpaces" id="apidoc.element.markdown-it.state_block.prototype.skipSpaces">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipSpaces
+        <span class="apidocSignatureSpan">(pos)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipSpaces(pos) {
+  var ch;
+
+  for (var max = this.src.length; pos &lt; max; pos++) {
+    ch = this.src.charCodeAt(pos);
+    if (!isSpace(ch)) { break; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  pos = state.skipChars(pos, marker);
+
+  // closing code fence must be at least as long as the opening one
+  if (pos - mem &lt; len) { continue; }
+
+  // make sure tail has spaces only
+  pos = state.<span class="apidocCodeKeywordSpan">skipSpaces</span>(pos);
+
+  if (pos &lt; max) { continue; }
+
+  haveEndMarker = true;
+  // found!
+  break;
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_block.prototype.skipSpacesBack" id="apidoc.element.markdown-it.state_block.prototype.skipSpacesBack">
+        function <span class="apidocSignatureSpan">markdown-it.state_block.prototype.</span>skipSpacesBack
+        <span class="apidocSignatureSpan">(pos, min)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function skipSpacesBack(pos, min) {
+  if (pos &lt;= min) { return pos; }
+
+  while (pos &gt; min) {
+    if (!isSpace(this.src.charCodeAt(--pos))) { return pos + 1; }
+  }
+  return pos;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+if (level &gt; 6 || (pos &lt; max &amp;&amp; !isSpace(ch))) { return false; }
+
+if (silent) { return true; }
+
+// Let's cut tails like '    ###  ' from the end of string
+
+max = state.<span class="apidocCodeKeywordSpan">skipSpacesBack</span>(max, pos);
+tmp = state.skipCharsBack(max, 0x23, pos); // #
+if (tmp &gt; pos &amp;&amp; isSpace(state.src.charCodeAt(tmp - 1))) {
+  max = tmp;
+}
+
+state.line = startLine + 1;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.state_core" id="apidoc.module.markdown-it.state_core">module markdown-it.state_core</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_core.state_core" id="apidoc.element.markdown-it.state_core.state_core">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_core
+        <span class="apidocSignatureSpan">(src, md, env)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateCore(src, md, env) {
+  this.src = src;
+  this.env = env;
+  this.tokens = [];
+  this.inlineMode = false;
+  this.md = md; // link to parser instance
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.state_core.prototype" id="apidoc.module.markdown-it.state_core.prototype">module markdown-it.state_core.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_core.prototype.Token" id="apidoc.element.markdown-it.state_core.prototype.Token">
+        function <span class="apidocSignatureSpan">markdown-it.state_core.prototype.</span>Token
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Token(type, tag, nesting) {
+<span class="apidocCodeCommentSpan">  /**
+   * Token#type -&gt; String
+   *
+   * Type of the token (string, e.g. "paragraph_open")
+   **/
+</span>  this.type     = type;
+
+  /**
+   * Token#tag -&gt; String
+   *
+   * html tag name, e.g. "p"
+   **/
+  this.tag      = tag;
+
+  /**
+   * Token#attrs -&gt; Array
+   *
+   * Html attributes. Format: `[ [ name1, value1 ], [ name2, value2 ] ]`
+   **/
+  this.attrs    = null;
+
+  /**
+   * Token#map -&gt; Array
+   *
+   * Source map info. Format: `[ line_begin, line_end ]`
+   **/
+  this.map      = null;
+
+  /**
+   * Token#nesting -&gt; Number
+   *
+   * Level change (number in {-1, 0, 1} set), where:
+   *
+   * -  `1` means the tag is opening
+   * -  `0` means the tag is self-closing
+   * - `-1` means the tag is closing
+   **/
+  this.nesting  = nesting;
+
+  /**
+   * Token#level -&gt; Number
+   *
+   * nesting level, the same as `state.level`
+   **/
+  this.level    = 0;
+
+  /**
+   * Token#children -&gt; Array
+   *
+   * An array of child nodes (inline and img tokens)
+   **/
+  this.children = null;
+
+  /**
+   * Token#content -&gt; String
+   *
+   * In a case of self-closing tag (code, html, fence, etc.),
+   * it has contents of this tag.
+   **/
+  this.content  = '';
+
+  /**
+   * Token#markup -&gt; String
+   *
+   * '*' or '_' for emphasis, fence string for fence, etc.
+   **/
+  this.markup   = '';
+
+  /**
+   * Token#info -&gt; String
+   *
+   * fence infostring
+   **/
+  this.info     = '';
+
+  /**
+   * Token#meta -&gt; Object
+   *
+   * A place for plugins to store an arbitrary data
+   **/
+  this.meta     = null;
+
+  /**
+   * Token#block -&gt; Boolean
+   *
+   * True for block-level tokens, false for inline tokens.
+   * Used in renderer to calculate line breaks
+   **/
+  this.block    = false;
+
+  /**
+   * Token#hidden -&gt; Boolean
+   *
+   * If it's true, ignore this element when rendering. Used for tight lists
+   * to hide paragraphs.
+   **/
+  this.hidden   = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+
+module.exports = function block(state) {
+var token;
+
+if (state.inlineMode) {
+  token          = new state.<span class="apidocCodeKeywordSpan">Token</span>('inline', '', 0);
+  token.content  = state.src;
+  token.map      = [ 0, 1 ];
+  token.children = [];
+  state.tokens.push(token);
+} else {
+  state.md.block.parse(state.src, state.md, state.env, state.tokens);
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.state_inline" id="apidoc.module.markdown-it.state_inline">module markdown-it.state_inline</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline.state_inline" id="apidoc.element.markdown-it.state_inline.state_inline">
+        function <span class="apidocSignatureSpan">markdown-it.</span>state_inline
+        <span class="apidocSignatureSpan">(src, md, env, outTokens)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function StateInline(src, md, env, outTokens) {
+  this.src = src;
+  this.env = env;
+  this.md = md;
+  this.tokens = outTokens;
+
+  this.pos = 0;
+  this.posMax = this.src.length;
+  this.level = 0;
+  this.pending = '';
+  this.pendingLevel = 0;
+
+  this.cache = {};        // Stores { start: end } pairs. Useful for backtrack
+                          // optimization of pairs parse (emphasis, strikes).
+
+  this.delimiters = [];   // Emphasis-like delimiters
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.state_inline.prototype" id="apidoc.module.markdown-it.state_inline.prototype">module markdown-it.state_inline.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline.prototype.Token" id="apidoc.element.markdown-it.state_inline.prototype.Token">
+        function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>Token
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Token(type, tag, nesting) {
+<span class="apidocCodeCommentSpan">  /**
+   * Token#type -&gt; String
+   *
+   * Type of the token (string, e.g. "paragraph_open")
+   **/
+</span>  this.type     = type;
+
+  /**
+   * Token#tag -&gt; String
+   *
+   * html tag name, e.g. "p"
+   **/
+  this.tag      = tag;
+
+  /**
+   * Token#attrs -&gt; Array
+   *
+   * Html attributes. Format: `[ [ name1, value1 ], [ name2, value2 ] ]`
+   **/
+  this.attrs    = null;
+
+  /**
+   * Token#map -&gt; Array
+   *
+   * Source map info. Format: `[ line_begin, line_end ]`
+   **/
+  this.map      = null;
+
+  /**
+   * Token#nesting -&gt; Number
+   *
+   * Level change (number in {-1, 0, 1} set), where:
+   *
+   * -  `1` means the tag is opening
+   * -  `0` means the tag is self-closing
+   * - `-1` means the tag is closing
+   **/
+  this.nesting  = nesting;
+
+  /**
+   * Token#level -&gt; Number
+   *
+   * nesting level, the same as `state.level`
+   **/
+  this.level    = 0;
+
+  /**
+   * Token#children -&gt; Array
+   *
+   * An array of child nodes (inline and img tokens)
+   **/
+  this.children = null;
+
+  /**
+   * Token#content -&gt; String
+   *
+   * In a case of self-closing tag (code, html, fence, etc.),
+   * it has contents of this tag.
+   **/
+  this.content  = '';
+
+  /**
+   * Token#markup -&gt; String
+   *
+   * '*' or '_' for emphasis, fence string for fence, etc.
+   **/
+  this.markup   = '';
+
+  /**
+   * Token#info -&gt; String
+   *
+   * fence infostring
+   **/
+  this.info     = '';
+
+  /**
+   * Token#meta -&gt; Object
+   *
+   * A place for plugins to store an arbitrary data
+   **/
+  this.meta     = null;
+
+  /**
+   * Token#block -&gt; Boolean
+   *
+   * True for block-level tokens, false for inline tokens.
+   * Used in renderer to calculate line breaks
+   **/
+  this.block    = false;
+
+  /**
+   * Token#hidden -&gt; Boolean
+   *
+   * If it's true, ignore this element when rendering. Used for tight lists
+   * to hide paragraphs.
+   **/
+  this.hidden   = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+'use strict';
+
+
+module.exports = function block(state) {
+var token;
+
+if (state.inlineMode) {
+  token          = new state.<span class="apidocCodeKeywordSpan">Token</span>('inline', '', 0);
+  token.content  = state.src;
+  token.map      = [ 0, 1 ];
+  token.children = [];
+  state.tokens.push(token);
+} else {
+  state.md.block.parse(state.src, state.md, state.env, state.tokens);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline.prototype.push" id="apidoc.element.markdown-it.state_inline.prototype.push">
+        function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>push
+        <span class="apidocSignatureSpan">(type, tag, nesting)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">push = function (type, tag, nesting) {
+  if (this.pending) {
+    this.pushPending();
+  }
+
+  var token = new Token(type, tag, nesting);
+
+  if (nesting &lt; 0) { this.level--; }
+  token.level = this.level;
+  if (nesting &gt; 0) { this.level++; }
+
+  this.pendingLevel = this.level;
+  this.tokens.push(token);
+  return token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+4.0.0 / 2015-03-11
+------------------
+
+- Breaking internal API changes. See [v4 migration notes](https://github.com/markdown-it/markdown-it/blob/master/docs/4.0_migration
+.md). In usual case you will need to update plugins.
+- Token internals changed
+- Unified the most of renderer methods.
+- Changed tokens creation - use `state.<span class="apidocCodeKeywordSpan">push</span>(...)` (see sources)
+- Moved `normalizeUrl()` to root class as `.normalizeLink()` &amp;
+  added `normalizeLinkText()` method.
+- Moved `.validateUrl()` to root class and simplified logic - no more need to
+  replace entities.
+- Joined md unescape &amp; replace entities logic to `utils.unescapeAll()`.
+- Removed `replaceEntities()` in `utils`.
+- `md.utils.lib` now exposes useful libs for plugins.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline.prototype.pushPending" id="apidoc.element.markdown-it.state_inline.prototype.pushPending">
+        function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>pushPending
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">pushPending = function () {
+  var token = new Token('text', '', 0);
+  token.content = this.pending;
+  token.level = this.pendingLevel;
+  this.tokens.push(token);
+  this.pending = '';
+  return token;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+     continue;
+   }
+
+   state.pending += state.src[state.pos++];
+ }
+
+ if (state.pending) {
+   state.<span class="apidocCodeKeywordSpan">pushPending</span>();
+ }
+};
+
+
+/**
+* ParserInline.parse(str, md, env, outTokens)
+*
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.state_inline.prototype.scanDelims" id="apidoc.element.markdown-it.state_inline.prototype.scanDelims">
+        function <span class="apidocSignatureSpan">markdown-it.state_inline.prototype.</span>scanDelims
+        <span class="apidocSignatureSpan">(start, canSplitWord)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scanDelims = function (start, canSplitWord) {
+  var pos = start, lastChar, nextChar, count, can_open, can_close,
+      isLastWhiteSpace, isLastPunctChar,
+      isNextWhiteSpace, isNextPunctChar,
+      left_flanking = true,
+      right_flanking = true,
+      max = this.posMax,
+      marker = this.src.charCodeAt(start);
+
+  // treat beginning of the line as a whitespace
+  lastChar = start &gt; 0 ? this.src.charCodeAt(start - 1) : 0x20;
+
+  while (pos &lt; max &amp;&amp; this.src.charCodeAt(pos) === marker) { pos++; }
+
+  count = pos - start;
+
+  // treat end of the line as a whitespace
+  nextChar = pos &lt; max ? this.src.charCodeAt(pos) : 0x20;
+
+  isLastPunctChar = isMdAsciiPunct(lastChar) || isPunctChar(String.fromCharCode(lastChar));
+  isNextPunctChar = isMdAsciiPunct(nextChar) || isPunctChar(String.fromCharCode(nextChar));
+
+  isLastWhiteSpace = isWhiteSpace(lastChar);
+  isNextWhiteSpace = isWhiteSpace(nextChar);
+
+  if (isNextWhiteSpace) {
+    left_flanking = false;
+  } else if (isNextPunctChar) {
+    if (!(isLastWhiteSpace || isLastPunctChar)) {
+      left_flanking = false;
+    }
+  }
+
+  if (isLastWhiteSpace) {
+    right_flanking = false;
+  } else if (isLastPunctChar) {
+    if (!(isNextWhiteSpace || isNextPunctChar)) {
+      right_flanking = false;
+    }
+  }
+
+  if (!canSplitWord) {
+    can_open  = left_flanking  &amp;&amp; (!right_flanking || isLastPunctChar);
+    can_close = right_flanking &amp;&amp; (!left_flanking  || isNextPunctChar);
+  } else {
+    can_open  = left_flanking;
+    can_close = right_flanking;
+  }
+
+  return {
+    can_open:  can_open,
+    can_close: can_close,
+    length:    count
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  start = state.pos,
+  marker = state.src.charCodeAt(start);
+
+  if (silent) { return false; }
+
+  if (marker !== 0x5F /* _ */ &amp;&amp; marker !== 0x2A /* * */) { return false; }
+
+  scanned = state.<span class="apidocCodeKeywordSpan">scanDelims</span>(state.pos, marker === 0x2A);
+
+  for (i = 0; i &lt; scanned.length; i++) {
+token         = state.push('text', '', 0);
+token.content = String.fromCharCode(marker);
+
+state.delimiters.push({
+  // Char code of the starting marker (number).
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.strikethrough" id="apidoc.module.markdown-it.strikethrough">module markdown-it.strikethrough</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.strikethrough.postProcess" id="apidoc.element.markdown-it.strikethrough.postProcess">
+        function <span class="apidocSignatureSpan">markdown-it.strikethrough.</span>postProcess
+        <span class="apidocSignatureSpan">(state)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function strikethrough(state) {
+  var i, j,
+      startDelim,
+      endDelim,
+      token,
+      loneMarkers = [],
+      delimiters = state.delimiters,
+      max = state.delimiters.length;
+
+  for (i = 0; i &lt; max; i++) {
+    startDelim = delimiters[i];
+
+    if (startDelim.marker !== 0x7E/* ~ */) {
+      continue;
+    }
+
+    if (startDelim.end === -1) {
+      continue;
+    }
+
+    endDelim = delimiters[startDelim.end];
+
+    token         = state.tokens[startDelim.token];
+    token.type    = 's_open';
+    token.tag     = 's';
+    token.nesting = 1;
+    token.markup  = '~~';
+    token.content = '';
+
+    token         = state.tokens[endDelim.token];
+    token.type    = 's_close';
+    token.tag     = 's';
+    token.nesting = -1;
+    token.markup  = '~~';
+    token.content = '';
+
+    if (state.tokens[endDelim.token - 1].type === 'text' &amp;&amp;
+        state.tokens[endDelim.token - 1].content === '~') {
+
+      loneMarkers.push(endDelim.token - 1);
+    }
+  }
+
+  // If a marker sequence has an odd number of characters, it's splitted
+  // like this: `~~~~~` -&gt; `~` + `~~` + `~~`, leaving one marker at the
+  // start of the sequence.
+  //
+  // So, we have to move all those markers after subsequent s_close tags.
+  //
+  while (loneMarkers.length) {
+    i = loneMarkers.pop();
+    j = i + 1;
+
+    while (j &lt; state.tokens.length &amp;&amp; state.tokens[j].type === 's_close') {
+      j++;
+    }
+
+    j--;
+
+    if (i !== j) {
+      token = state.tokens[j];
+      state.tokens[j] = state.tokens[i];
+      state.tokens[i] = token;
+    }
+  }
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.strikethrough.tokenize" id="apidoc.element.markdown-it.strikethrough.tokenize">
+        function <span class="apidocSignatureSpan">markdown-it.strikethrough.</span>tokenize
+        <span class="apidocSignatureSpan">(state, silent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function strikethrough(state, silent) {
+  var i, scanned, token, len, ch,
+      start = state.pos,
+      marker = state.src.charCodeAt(start);
+
+  if (silent) { return false; }
+
+  if (marker !== 0x7E/* ~ */) { return false; }
+
+  scanned = state.scanDelims(state.pos, true);
+  len = scanned.length;
+  ch = String.fromCharCode(marker);
+
+  if (len &lt; 2) { return false; }
+
+  if (len % 2) {
+    token         = state.push('text', '', 0);
+    token.content = ch;
+    len--;
+  }
+
+  for (i = 0; i &lt; len; i += 2) {
+    token         = state.push('text', '', 0);
+    token.content = ch + ch;
+
+    state.delimiters.push({
+      marker: marker,
+      jump:   i,
+      token:  state.tokens.length - 1,
+      level:  state.level,
+      end:    -1,
+      open:   scanned.can_open,
+      close:  scanned.can_close
+    });
+  }
+
+  state.pos += scanned.length;
+
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ParserBlock.prototype.parse = function (src, md, env, outTokens) {
+  var state;
+
+  if (!src) { return; }
+
+  state = new this.State(src, md, env, outTokens);
+
+  this.<span class="apidocCodeKeywordSpan">tokenize</span>(state, state.line, state.lineMax);
+};
+
+
+ParserBlock.prototype.State = require('./rules_block/state_block');
+
+
+module.exports = ParserBlock;
+...</pre></li>
     </ul>
 
 
@@ -2549,21 +4477,21 @@ ParserBlock.prototype.tokenize = function (state, startLine, endLine) {
   return value;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-} else {
-  this.attrs[idx] = attrData;
-}
-};
+
+- Process `\r` the same way as `\n` and `\r\n\`, #252.
 
 
-/**
- * Token.<span class="apidocCodeKeywordSpan">attrGet</span>(name)
- *
- * Get the value of attribute `name`, or null if it does not exist.
- **/
-Token.prototype.attrGet = function attrGet(name) {
-var idx = this.attrIndex(name), value = null;
-if (idx &gt;= 0) {
-  value = this.attrs[idx][1];
+6.0.4 / 2016-05-30
+------------------
+
+- Added `Token.<span class="apidocCodeKeywordSpan">attrGet</span>()` method for convenience, #251.
+
+
+6.0.3 / 2016-05-30
+------------------
+
+- Security fix: possible ReDOS in `linkify-it` (forced bump of `linkify-it` &amp;
+`uc-micro` dependencies). New installs will use fixed packages automatically,
 ...</pre></li>
     </ul>
 
@@ -2626,20 +4554,21 @@ if (i &lt; 0) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-  value = this.attrs[idx][1];
-}
-return value;
-};
+- Fixed nesting limit check in inline blocks, #197.
+- Fixed posible tail loss in CLI ouput.
 
 
-/**
- * Token.<span class="apidocCodeKeywordSpan">attrJoin</span>(name, value)
- *
- * Join value to existing attribute via space. Or create new attribute if not
- * exists. Useful to operate with token classes.
- **/
-Token.prototype.attrJoin = function attrJoin(name, value) {
-var idx = this.attrIndex(name);
+5.1.0 / 2016-01-07
+------------------
+
+- Token: added `.attrSet()` &amp; `.<span class="apidocCodeKeywordSpan">attrJoin</span>()` methods.
+- Highlighter: allow wrapper override (if result starts with "&lt;pre").
+
+
+5.0.3 / 2016-01-04
+------------------
+
+- Allow single column and mismatched columns count in tables.
 ...</pre></li>
     </ul>
 
@@ -2698,22 +4627,421 @@ if (this.attrs) {
   }
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-} else {
-  this.attrs = [ attrData ];
-}
-};
+- Fixed nesting limit check in inline blocks, #197.
+- Fixed posible tail loss in CLI ouput.
 
 
-/**
- * Token.<span class="apidocCodeKeywordSpan">attrSet</span>(name, value)
- *
- * Set `name` attribute to `value`. Override old value if exists.
- **/
-Token.prototype.attrSet = function attrSet(name, value) {
-var idx = this.attrIndex(name),
-    attrData = [ name, value ];
+5.1.0 / 2016-01-07
+------------------
+
+- Token: added `.<span class="apidocCodeKeywordSpan">attrSet</span>()` &amp; `.attrJoin()` methods.
+- Highlighter: allow wrapper override (if result starts with "&lt;pre").
+
+
+5.0.3 / 2016-01-04
+------------------
+
+- Allow single column and mismatched columns count in tables.
 ...</pre></li>
     </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.markdown-it.utils" id="apidoc.module.markdown-it.utils">module markdown-it.utils</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.arrayReplaceAt" id="apidoc.element.markdown-it.utils.arrayReplaceAt">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>arrayReplaceAt
+        <span class="apidocSignatureSpan">(src, pos, newElements)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function arrayReplaceAt(src, pos, newElements) {
+  return [].concat(src.slice(0, pos), newElements, src.slice(pos + 1));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.assign" id="apidoc.element.markdown-it.utils.assign">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>assign
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function assign(obj) {
+  var sources = Array.prototype.slice.call(arguments, 1);
+
+  sources.forEach(function (source) {
+    if (!source) { return; }
+
+    if (typeof source !== 'object') {
+      throw new TypeError(source + 'must be object');
+    }
+
+    Object.keys(source).forEach(function (key) {
+      obj[key] = source[key];
+    });
+  });
+
+  return obj;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+  /**
+   * MarkdownIt#helpers -&gt; helpers
+   *
+   * Link components parser functions, useful to write plugins. See details
+   * [here](https://github.com/markdown-it/markdown-it/blob/master/lib/helpers).
+   **/
+  this.helpers = utils.<span class="apidocCodeKeywordSpan">assign</span>({}, helpers);
+
+
+  this.options = {};
+  this.configure(presetName);
+
+  if (options) { this.set(options); }
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.escapeHtml" id="apidoc.element.markdown-it.utils.escapeHtml">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>escapeHtml
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeHtml(str) {
+  if (HTML_ESCAPE_TEST_RE.test(str)) {
+    return str.replace(HTML_ESCAPE_REPLACE_RE, replaceUnsafeChar);
+  }
+  return str;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+      try {
+        return '&lt;pre class="hljs"&gt;&lt;code&gt;' +
+               hljs.highlight(lang, str, true).value +
+               '&lt;/code&gt;&lt;/pre&gt;';
+      } catch (__) {}
+    }
+
+    return '&lt;pre class="hljs"&gt;&lt;code&gt;' + md.utils.<span class="apidocCodeKeywordSpan">escapeHtml
+</span>(str) + '&lt;/code&gt;&lt;/pre&gt;';
+  }
+});
+```
+
+### Linkify
+
+`linkify: true` uses [linkify-it](https://github.com/markdown-it/linkify-it). To
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.escapeRE" id="apidoc.element.markdown-it.utils.escapeRE">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>escapeRE
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function escapeRE(str) {
+  return str.replace(REGEXP_ESCAPE_RE, '\\$&amp;');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.fromCodePoint" id="apidoc.element.markdown-it.utils.fromCodePoint">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>fromCodePoint
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function fromCodePoint(c) {
+<span class="apidocCodeCommentSpan">  /*eslint no-bitwise:0*/
+</span>  if (c &gt; 0xffff) {
+    c -= 0x10000;
+    var surrogate1 = 0xd800 + (c &gt;&gt; 10),
+        surrogate2 = 0xdc00 + (c &amp; 0x3ff);
+
+    return String.fromCharCode(surrogate1, surrogate2);
+  }
+  return String.fromCharCode(c);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.has" id="apidoc.element.markdown-it.utils.has">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>has
+        <span class="apidocSignatureSpan">(object, key)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function has(object, key) {
+  return _hasOwnProperty.call(object, key);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isMdAsciiPunct" id="apidoc.element.markdown-it.utils.isMdAsciiPunct">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isMdAsciiPunct
+        <span class="apidocSignatureSpan">(ch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isMdAsciiPunct(ch) {
+  switch (ch) {
+    case 0x21/* ! */:
+    case 0x22/* " */:
+    case 0x23/* # */:
+    case 0x24/* $ */:
+    case 0x25/* % */:
+    case 0x26/* &amp; */:
+    case 0x27/* ' */:
+    case 0x28/* ( */:
+    case 0x29/* ) */:
+    case 0x2A/* * */:
+    case 0x2B/* + */:
+    case 0x2C/* , */:
+    case 0x2D/* - */:
+    case 0x2E/* . */:
+    case 0x2F/* / */:
+    case 0x3A/* : */:
+    case 0x3B/* ; */:
+    case 0x3C/* &lt; */:
+    case 0x3D/* = */:
+    case 0x3E/* &gt; */:
+    case 0x3F/* ? */:
+    case 0x40/* @ */:
+    case 0x5B/* [ */:
+    case 0x5C/* \ */:
+    case 0x5D/* ] */:
+    case 0x5E/* ^ */:
+    case 0x5F/* _ */:
+    case 0x60/* ` */:
+    case 0x7B/* { */:
+    case 0x7C/* | */:
+    case 0x7D/* } */:
+    case 0x7E/* ~ */:
+      return true;
+    default:
+      return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isPunctChar" id="apidoc.element.markdown-it.utils.isPunctChar">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isPunctChar
+        <span class="apidocSignatureSpan">(ch)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isPunctChar(ch) {
+  return UNICODE_PUNCT_RE.test(ch);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isSpace" id="apidoc.element.markdown-it.utils.isSpace">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isSpace
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isSpace(code) {
+  switch (code) {
+    case 0x09:
+    case 0x20:
+      return true;
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isString" id="apidoc.element.markdown-it.utils.isString">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isString
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isString(obj) { return _class(obj) === '[object String]'; }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ **/
+function MarkdownIt(presetName, options) {
+if (!(this instanceof MarkdownIt)) {
+  return new MarkdownIt(presetName, options);
+}
+
+if (!options) {
+  if (!utils.<span class="apidocCodeKeywordSpan">isString</span>(presetName)) {
+    options = presetName || {};
+    presetName = 'default';
+  }
+}
+
+/**
+ * MarkdownIt#inline -&gt; ParserInline
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isValidEntityCode" id="apidoc.element.markdown-it.utils.isValidEntityCode">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isValidEntityCode
+        <span class="apidocSignatureSpan">(c)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isValidEntityCode(c) {
+<span class="apidocCodeCommentSpan">  /*eslint no-bitwise:0*/
+</span>  // broken sequence
+  if (c &gt;= 0xD800 &amp;&amp; c &lt;= 0xDFFF) { return false; }
+  // never used
+  if (c &gt;= 0xFDD0 &amp;&amp; c &lt;= 0xFDEF) { return false; }
+  if ((c &amp; 0xFFFF) === 0xFFFF || (c &amp; 0xFFFF) === 0xFFFE) { return false; }
+  // control codes
+  if (c &gt;= 0x00 &amp;&amp; c &lt;= 0x08) { return false; }
+  if (c === 0x0B) { return false; }
+  if (c &gt;= 0x0E &amp;&amp; c &lt;= 0x1F) { return false; }
+  if (c &gt;= 0x7F &amp;&amp; c &lt;= 0x9F) { return false; }
+  // out of range
+  if (c &gt; 0x10FFFF) { return false; }
+  return true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.isWhiteSpace" id="apidoc.element.markdown-it.utils.isWhiteSpace">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>isWhiteSpace
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function isWhiteSpace(code) {
+  if (code &gt;= 0x2000 &amp;&amp; code &lt;= 0x200A) { return true; }
+  switch (code) {
+    case 0x09: // \t
+    case 0x0A: // \n
+    case 0x0B: // \v
+    case 0x0C: // \f
+    case 0x0D: // \r
+    case 0x20:
+    case 0xA0:
+    case 0x1680:
+    case 0x202F:
+    case 0x205F:
+    case 0x3000:
+      return true;
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.normalizeReference" id="apidoc.element.markdown-it.utils.normalizeReference">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>normalizeReference
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function normalizeReference(str) {
+  // use .toUpperCase() instead of .toLowerCase()
+  // here to avoid a conflict with Object.prototype
+  // members (most notably, `__proto__`)
+  return str.trim().replace(/\s+/g, ' ').toUpperCase();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.unescapeAll" id="apidoc.element.markdown-it.utils.unescapeAll">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>unescapeAll
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unescapeAll(str) {
+  if (str.indexOf('\\') &lt; 0 &amp;&amp; str.indexOf('&amp;') &lt; 0) { return str; }
+
+  return str.replace(UNESCAPE_ALL_RE, function (match, escaped, entity) {
+    if (escaped) { return escaped; }
+    return replaceEntityPattern(match, entity);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+- Token internals changed
+- Unified the most of renderer methods.
+- Changed tokens creation - use `state.push(...)` (see sources)
+- Moved `normalizeUrl()` to root class as `.normalizeLink()` &amp;
+  added `normalizeLinkText()` method.
+- Moved `.validateUrl()` to root class and simplified logic - no more need to
+  replace entities.
+- Joined md unescape &amp; replace entities logic to `utils.<span class="apidocCodeKeywordSpan">unescapeAll</span>()`.
+- Removed `replaceEntities()` in `utils`.
+- `md.utils.lib` now exposes useful libs for plugins.
+- Use entities data from external package.
+- Fixed emphasis regression, caused by CM v0.18 spec (#65).
+
+
+3.1.0 / 2015-03-05
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.markdown-it.utils.unescapeMd" id="apidoc.element.markdown-it.utils.unescapeMd">
+        function <span class="apidocSignatureSpan">markdown-it.utils.</span>unescapeMd
+        <span class="apidocSignatureSpan">(str)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function unescapeMd(str) {
+  if (str.indexOf('\\') &lt; 0) { return str; }
+  return str.replace(UNESCAPE_MD_RE, '$1');
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
 
 
 </div>
