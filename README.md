@@ -1,4 +1,7 @@
-# api documentation for  [markdown-it (v8.3.1)](https://github.com/markdown-it/markdown-it#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-it.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-it) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-it.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-it)
+# npmdoc-markdown-it
+
+#### basic api documentation for  [markdown-it (v8.3.1)](https://github.com/markdown-it/markdown-it#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-markdown-it.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-markdown-it) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-markdown-it.svg)](https://travis-ci.org/npmdoc/node-npmdoc-markdown-it)
+
 #### Markdown-it - modern pluggable markdown parser.
 
 [![NPM](https://nodei.co/npm/markdown-it.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/markdown-it)
